@@ -1,0 +1,20 @@
+import SwiftUI
+
+struct GermanyMainView: View {
+    @StateObject var ViewModel = CountriesListViewModel()
+    
+    var body: some View {
+            VStack {
+                ForEach (ViewModel.countries, id: \.id) {country in
+                    MenuView(CountryImage1: "Germany1", CountryImage2: "Germany2", CountryImage3: "Germany3", CountryImage4: "Germany4", country: country)
+                }
+            }
+            .onAppear{
+                ViewModel.getCountryNetwork(whichCountryToGet1: "Germany2")
+            }
+    }
+}
+
+#Preview {
+    GermanyMainView()
+}
