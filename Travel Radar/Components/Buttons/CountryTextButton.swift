@@ -1,21 +1,32 @@
 import SwiftUI
+import Foundation
+import MapKit
 struct CountryTextButton: View {
-    @Binding var isShowedView: Bool
-    @State var Countryimage: String
+    @StateObject private var viewModel = MapViewModelView()
+    //@State var countryName : String
+    @State var countryImage: String
+    //@State var view: any View
     var body: some View {
-        Button(action: {
-            isShowedView.toggle()
-        }, label: {
-            Image(Countryimage)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 22)
-                .cornerRadius(50)
-        })
-        .padding(5)
-        .background(Color(.white))
-        .cornerRadius(16)
-    }
-}
-
-
+//        NavigationStack{
+//            Map{
+//                Annotation("",
+//                           coordinate: viewModel.location[countryName]!) {
+//                    NavigationLink{
+//                        AnyView(view)
+//                    } label: {
+                        Image(countryImage)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 22)
+                            .cornerRadius(50)
+                            .padding(5)
+                            .background(Color(.white))
+                            .cornerRadius(16)
+                    }
+                }
+//            }
+//        }
+//    }
+//}
+//
+//
