@@ -16,7 +16,7 @@ struct MapView: View {
                         Image(systemName: "list.bullet.clipboard")
                         Text("Список стран")
                     }
-                Map(position: $viewModel.camera){
+                Map(){
                     //                CountryTextButton1(countryName: "UK", countryImage: "FixedUkFlag", view: UKMainView())
                     //                CountryTextButton1(countryName: "US", countryImage: "UsFlag", view: UsaMainView())
                     //                CountryTextButton1(countryName: "Spain", countryImage: "SpainFlag", view: SpainMainView())
@@ -27,7 +27,7 @@ struct MapView: View {
                         NavigationLink{
                             UKMainView()
                         } label: {
-                            CountryTextButton(Countryimage: "FixedUkFlag")
+                            CountryTextButton(countryImage: "FixedUkFlag")
                         }
                     }
                     Annotation("",
@@ -35,7 +35,7 @@ struct MapView: View {
                         NavigationLink{
                             UKMainView()
                         } label: {
-                            CountryTextButton(Countryimage: "SpainFlag")
+                            CountryTextButton(countryImage: "SpainFlag")
                         }
                     }
                     Annotation("",
@@ -43,7 +43,7 @@ struct MapView: View {
                         NavigationLink{
                             UKMainView()
                         } label: {
-                            CountryTextButton(Countryimage: "UsFlag")
+                            CountryTextButton(countryImage: "UsFlag")
                         }
                     }
                     Annotation("",
@@ -51,7 +51,7 @@ struct MapView: View {
                         NavigationLink{
                             UKMainView()
                         } label: {
-                            CountryTextButton(Countryimage: "FranceFlag")
+                            CountryTextButton(countryImage: "FranceFlag")
                         }
                     }
                     Annotation("",
@@ -59,7 +59,7 @@ struct MapView: View {
                         NavigationLink{
                             UKMainView()
                         } label: {
-                            CountryTextButton(Countryimage: "PortugalFlag")
+                            CountryTextButton(countryImage: "PortugalFlag")
                         }
                     }
                     Annotation("",
@@ -67,7 +67,7 @@ struct MapView: View {
                         NavigationLink{
                             UKMainView()
                         } label: {
-                            CountryTextButton(Countryimage: "IrelandFlag")
+                            CountryTextButton(countryImage: "IrelandFlag")
                         }
                     }
                     Annotation("",
@@ -75,7 +75,7 @@ struct MapView: View {
                         NavigationLink{
                             UKMainView()
                         } label: {
-                            CountryTextButton(Countryimage: "GermanyFlag")
+                            CountryTextButton(countryImage: "GermanyFlag")
                         }
                     }
                 }.tabItem {
