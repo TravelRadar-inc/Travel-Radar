@@ -11,6 +11,10 @@ struct SpainMainView: View {
     @StateObject var ViewModel = CountriesListViewModel()
     
     var body: some View {
+        ZStack {
+            Color("lightGray")
+                .ignoresSafeArea()
+            
             VStack {
                 ForEach (ViewModel.countries, id: \.id) {country in
                     MenuView(CountryImage1: "Uk1", CountryImage2: "Uk2", CountryImage3: "Uk3", CountryImage4: "Uk4", country: country)
@@ -23,7 +27,8 @@ struct SpainMainView: View {
                 Alert(title: alertItem.title,
                       message: alertItem.message,
                       dismissButton: alertItem.dismissButton)
-            }
+        }
+        }
     }
     
 }

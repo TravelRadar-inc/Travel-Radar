@@ -4,6 +4,10 @@ struct GermanyMainView: View {
     @StateObject var ViewModel = CountriesListViewModel()
     
     var body: some View {
+        ZStack {
+            Color("lightGray")
+                .ignoresSafeArea()
+            
             VStack {
                 ForEach (ViewModel.countries, id: \.id) {country in
                     MenuView(CountryImage1: "Germany1", CountryImage2: "Germany2", CountryImage3: "Germany3", CountryImage4: "Germany4", country: country)
@@ -12,6 +16,12 @@ struct GermanyMainView: View {
             .onAppear{
                 ViewModel.getCountryNetwork(whichCountryToGet1: "Germany2")
             }
+            .alert(item: $ViewModel.alertItem) { alertItem in
+                Alert(title: alertItem.title,
+                      message: alertItem.message,
+                      dismissButton: alertItem.dismissButton)
+        }
+        }
     }
 }
 

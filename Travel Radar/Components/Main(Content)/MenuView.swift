@@ -6,6 +6,11 @@ struct MenuView: View {
     var CountryImage2: String
     var CountryImage3: String
     var CountryImage4: String
+    @State private var ifShowedDiscription = false
+    @State private var ifShowedBorders = false
+    @State private var ifShowedTickets = false
+    @State private var ifShowedVisa = false
+    @State private var ifShowedDocuments = false
     
     let country: Country
     
@@ -15,8 +20,8 @@ struct MenuView: View {
                 HStack{
                     Text(country.name)
                         .padding()
+                        .background(Color("transperentWhite"))
                         .font(.largeTitle)
-                        .background(Color("conditionsColor"))
                         .cornerRadius(16)
                 }
                 
@@ -39,107 +44,16 @@ struct MenuView: View {
                 .frame(width: 350, height: 220)
                 .padding(.top)
                 
-                VStack {
-                    HStack {
-                        Text("📜 Описание")
-                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                            .padding(.bottom, 10)
-                        
-                        Spacer()
-                    }
-                    
-                    Text(country.discription)
-                        .font(.title2)
-                }
-                .padding()
-                .background(Color("conditionsColor"))
-                .cornerRadius(16)
-                .padding([.top, .leading, .trailing], 20)
+                SlidingButton(isShowedSomething: ifShowedDiscription, textOfButton: "📜 Описание", textOfElement: country.discription)
                 
-                VStack {
-                    HStack {
-                        Text("🗺️ Границы")
-                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                            .padding(.bottom, 10)
-                        
-                        Spacer()
-                    }
-                    
-                    HStack {
-                        Text(country.borders)
-                            .font(.title2)
-                        
-                        Spacer()
-                    }
-                }
-                .padding()
-                .background(Color("conditionsColor"))
-                .cornerRadius(16)
-                .padding([.top, .leading, .trailing], 20)
+                SlidingButton(isShowedSomething: ifShowedBorders, textOfButton: "🗺️ Границы", textOfElement: country.borders)
                 
-                VStack {
-                    HStack {
-                        Text("✈️ Билеты")
-                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                            .padding(.bottom, 10)
-                        
-                        Spacer()
-                    }
-                    
-                    Text(country.tickets)
-                        .font(.title2)
-                }
-                .padding()
-                .background(Color("conditionsColor"))
-                .cornerRadius(16)
-                .padding([.top, .leading, .trailing], 20)
+                SlidingButton(isShowedSomething: ifShowedTickets, textOfButton: "✈️ Билеты", textOfElement: country.tickets)
                 
-                VStack {
-                    HStack {
-                        Text("🪪 Виза")
-                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                            .padding(.bottom, 10)
-                        
-                        Spacer()
-                    }
-                    
-                    Text(country.visa)
-                        .font(.title2)
-                }
-                .padding()
-                .background(Color("conditionsColor"))
-                .cornerRadius(16)
-                .padding([.top, .leading, .trailing], 20)
+                SlidingButton(isShowedSomething: ifShowedVisa, textOfButton: "🪪 Виза", textOfElement: country.visa)
                 
-                VStack {
-                    HStack {
-                        Text("📑 Документы")
-                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                            .padding(.bottom, 10)
-                        
-                        Spacer()
-                    }
-    
-                    HStack {
-                        Text("• " + country.documents1)
-                            .font(.title2)
-                        
-                        Spacer()
-                    }
-                        
-                    HStack{
-                        Text("• " + country.documents2)
-                            .font(.title2)
-                        
-                        Spacer()
-                    }
-                    
-                    
-                }
-                .padding()
-                .background(Color("conditionsColor"))
-                .cornerRadius(16)
-                .padding([.top, .leading, .trailing], 20)
+                SlidingButton(isShowedSomething: ifShowedDocuments, textOfButton: "📑 Документы", textOfElement: "• " + country.documents1 + "\n• " + country.documents2)
+                
             }
         }
     }

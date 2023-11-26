@@ -66,6 +66,7 @@
 		A0C828BD2B0BE37600EA1A10 /* MapOnlyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828BC2B0BE37600EA1A10 /* MapOnlyView.swift */; };
 		A0C828BF2B0BE61800EA1A10 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828BE2B0BE61800EA1A10 /* CustomTabBarView.swift */; };
 		A0C828C12B0BF16A00EA1A10 /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828C02B0BF16A00EA1A10 /* CustomTabBarContainerView.swift */; };
+		D13DC7F92B125B9B006B2CAE /* SlidingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13DC7F82B125B9B006B2CAE /* SlidingButton.swift */; };
 		D14489802B08A71000D94E68 /* SpainMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D144897F2B08A71000D94E68 /* SpainMainView.swift */; };
 		D18EF6222B04CA0800E6C4AF /* CountriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18EF6212B04CA0800E6C4AF /* CountriesListViewModel.swift */; };
 		D18EF6242B04FA0300E6C4AF /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18EF6232B04FA0300E6C4AF /* Alert.swift */; };
@@ -112,6 +113,7 @@
 		A0C828BC2B0BE37600EA1A10 /* MapOnlyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapOnlyView.swift; sourceTree = "<group>"; };
 		A0C828BE2B0BE61800EA1A10 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		A0C828C02B0BF16A00EA1A10 /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
+		D13DC7F82B125B9B006B2CAE /* SlidingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingButton.swift; sourceTree = "<group>"; };
 		D144897F2B08A71000D94E68 /* SpainMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpainMainView.swift; sourceTree = "<group>"; };
 		D18EF6212B04CA0800E6C4AF /* CountriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListViewModel.swift; sourceTree = "<group>"; };
 		D18EF6232B04FA0300E6C4AF /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
@@ -313,6 +315,7 @@
 				A03922622AE577B9009B1020 /* BackgroundMainView.swift */,
 				D1DE48C32B04126700F5C50F /* ListViewHStack.swift */,
 				D1DE48D12B04133700F5C50F /* MenuView.swift */,
+				D13DC7F82B125B9B006B2CAE /* SlidingButton.swift */,
 			);
 			path = "Main(Content)";
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				A08644FD2AEE83390059A578 /* MapView.swift in Sources */,
 				A03922732AE58F04009B1020 /* ButtonMini.swift in Sources */,
 				A03922632AE577B9009B1020 /* BackgroundMainView.swift in Sources */,
+				D13DC7F92B125B9B006B2CAE /* SlidingButton.swift in Sources */,
 				D1DE48C42B04126700F5C50F /* ListViewHStack.swift in Sources */,
 				A051D48D2AF678E000C46391 /* Utilities.swift in Sources */,
 				A086451B2AEEA4150059A578 /* SettingsText.swift in Sources */,
