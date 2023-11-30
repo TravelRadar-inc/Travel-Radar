@@ -12,7 +12,7 @@ struct Travel_RadarApp: App {
 //                }
 //                
 //            }
-            MapView()
+            MainAppView()
         }
     }
 }

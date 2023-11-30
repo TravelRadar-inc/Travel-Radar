@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A00B32272AFABCD200F4F605 /* ListCountries.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B32262AFABCD200F4F605 /* ListCountries.swift */; };
+		A00B32272AFABCD200F4F605 /* CountriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B32262AFABCD200F4F605 /* CountriesListView.swift */; };
 		A03922512AE56AF4009B1020 /* Travel_RadarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922502AE56AF4009B1020 /* Travel_RadarApp.swift */; };
-		A03922532AE56AF4009B1020 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922522AE56AF4009B1020 /* ContentView.swift */; };
+		A03922532AE56AF4009B1020 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922522AE56AF4009B1020 /* LogInView.swift */; };
 		A03922552AE56AF5009B1020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03922542AE56AF5009B1020 /* Assets.xcassets */; };
 		A03922582AE56AF5009B1020 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03922572AE56AF5009B1020 /* Preview Assets.xcassets */; };
-		A039225F2AE5772D009B1020 /* ButtonEnter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039225E2AE5772D009B1020 /* ButtonEnter.swift */; };
+		A039225F2AE5772D009B1020 /* EnterBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039225E2AE5772D009B1020 /* EnterBtn.swift */; };
 		A03922632AE577B9009B1020 /* BackgroundMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922622AE577B9009B1020 /* BackgroundMainView.swift */; };
 		A03922652AE5780D009B1020 /* TextMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922642AE5780D009B1020 /* TextMainView.swift */; };
 		A03922672AE5788B009B1020 /* TextFieldMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922662AE5788B009B1020 /* TextFieldMainView.swift */; };
-		A03922692AE57981009B1020 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922682AE57981009B1020 /* RegisterView.swift */; };
+		A03922692AE57981009B1020 /* RegisterChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922682AE57981009B1020 /* RegisterChoiceView.swift */; };
 		A039226B2AE57E2C009B1020 /* TextRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039226A2AE57E2C009B1020 /* TextRegisterView.swift */; };
-		A039226D2AE58AFE009B1020 /* ButtonRegisterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039226C2AE58AFE009B1020 /* ButtonRegisterImageView.swift */; };
-		A039226F2AE58D94009B1020 /* ButtonRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039226E2AE58D94009B1020 /* ButtonRegisterView.swift */; };
-		A03922712AE58E4B009B1020 /* RegisterView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922702AE58E4B009B1020 /* RegisterView2.swift */; };
-		A03922732AE58F04009B1020 /* ButtonMini.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922722AE58F04009B1020 /* ButtonMini.swift */; };
+		A039226D2AE58AFE009B1020 /* AppleRegisterBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039226C2AE58AFE009B1020 /* AppleRegisterBtn.swift */; };
+		A039226F2AE58D94009B1020 /* RegisterBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039226E2AE58D94009B1020 /* RegisterBtn.swift */; };
+		A03922712AE58E4B009B1020 /* RegisterWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922702AE58E4B009B1020 /* RegisterWindowView.swift */; };
+		A03922732AE58F04009B1020 /* MiniBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922722AE58F04009B1020 /* MiniBtn.swift */; };
 		A051D4832AF65A3D00C46391 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = A051D4822AF65A3D00C46391 /* GoogleSignIn */; };
 		A051D4852AF65A3D00C46391 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A051D4842AF65A3D00C46391 /* GoogleSignInSwift */; };
 		A051D4882AF65E1400C46391 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A051D4872AF65E1400C46391 /* GoogleService-Info.plist */; };
@@ -55,84 +55,92 @@
 		A08644F72AEE7F680059A578 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A08644F62AEE7F680059A578 /* FirebaseRemoteConfigSwift */; };
 		A08644F92AEE7F680059A578 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A08644F82AEE7F680059A578 /* FirebaseStorage */; };
 		A08644FB2AEE7F680059A578 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = A08644FA2AEE7F680059A578 /* FirebaseStorageCombine-Community */; };
-		A08644FD2AEE83390059A578 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08644FC2AEE83390059A578 /* MapView.swift */; };
+		A08644FD2AEE83390059A578 /* MainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08644FC2AEE83390059A578 /* MainAppView.swift */; };
 		A08644FF2AEE874A0059A578 /* SecureFieldMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08644FE2AEE874A0059A578 /* SecureFieldMainView.swift */; };
-		A08645152AEEA36A0059A578 /* CountryTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08645142AEEA36A0059A578 /* CountryTextButton.swift */; };
-		A08645172AEEA38F0059A578 /* SettingsButtonText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08645162AEEA38F0059A578 /* SettingsButtonText.swift */; };
+		A08645152AEEA36A0059A578 /* CountryBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08645142AEEA36A0059A578 /* CountryBtn.swift */; };
+		A08645172AEEA38F0059A578 /* SettingsBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08645162AEEA38F0059A578 /* SettingsBtn.swift */; };
 		A08645192AEEA3A60059A578 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08645182AEEA3A60059A578 /* SettingsView.swift */; };
 		A086451B2AEEA4150059A578 /* SettingsText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A086451A2AEEA4150059A578 /* SettingsText.swift */; };
 		A08645212AEFFD160059A578 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08645202AEFFD160059A578 /* User.swift */; };
 		A08645242AEFFFD30059A578 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08645232AEFFFD30059A578 /* AuthManager.swift */; };
-		A0C828BD2B0BE37600EA1A10 /* MapOnlyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828BC2B0BE37600EA1A10 /* MapOnlyView.swift */; };
+		A0C828BD2B0BE37600EA1A10 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828BC2B0BE37600EA1A10 /* MapView.swift */; };
 		A0C828BF2B0BE61800EA1A10 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828BE2B0BE61800EA1A10 /* CustomTabBarView.swift */; };
 		A0C828C12B0BF16A00EA1A10 /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828C02B0BF16A00EA1A10 /* CustomTabBarContainerView.swift */; };
-		D13DC7F92B125B9B006B2CAE /* SlidingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13DC7F82B125B9B006B2CAE /* SlidingButton.swift */; };
+		D13DC7F92B125B9B006B2CAE /* CountryInfoBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13DC7F82B125B9B006B2CAE /* CountryInfoBtn.swift */; };
 		D14489802B08A71000D94E68 /* SpainMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D144897F2B08A71000D94E68 /* SpainMainView.swift */; };
 		D173A98B2B1886F4000DBDCA /* FranceMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173A98A2B1886F4000DBDCA /* FranceMainView.swift */; };
 		D173A98D2B188B4F000DBDCA /* IrelandMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173A98C2B188B4F000DBDCA /* IrelandMainView.swift */; };
 		D173A98F2B188E69000DBDCA /* PortugalMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173A98E2B188E69000DBDCA /* PortugalMainView.swift */; };
 		D173A9912B1890BF000DBDCA /* BrazilMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173A9902B1890BF000DBDCA /* BrazilMainView.swift */; };
-		D18EF6222B04CA0800E6C4AF /* CountriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18EF6212B04CA0800E6C4AF /* CountriesListViewModel.swift */; };
+		D173A9942B18D761000DBDCA /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173A9932B18D761000DBDCA /* SettingsViewModel.swift */; };
+		D173A9962B18D79B000DBDCA /* SignUpEmailInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173A9952B18D79B000DBDCA /* SignUpEmailInViewModel.swift */; };
+		D173A9982B18D7DC000DBDCA /* GoogleSignInrResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173A9972B18D7DC000DBDCA /* GoogleSignInrResultModel.swift */; };
+		D173A99A2B18D828000DBDCA /* TabBarItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173A9992B18D828000DBDCA /* TabBarItemModel.swift */; };
+		D18EF6222B04CA0800E6C4AF /* NetworkCallModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18EF6212B04CA0800E6C4AF /* NetworkCallModel.swift */; };
 		D18EF6242B04FA0300E6C4AF /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18EF6232B04FA0300E6C4AF /* Alert.swift */; };
-		D1DE48C42B04126700F5C50F /* ListViewHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DE48C32B04126700F5C50F /* ListViewHStack.swift */; };
+		D1DE48C42B04126700F5C50F /* CountriesListBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DE48C32B04126700F5C50F /* CountriesListBtnView.swift */; };
 		D1DE48C62B04129500F5C50F /* UKMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DE48C52B04129500F5C50F /* UKMainView.swift */; };
 		D1DE48C82B0412AD00F5C50F /* UsaMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DE48C72B0412AD00F5C50F /* UsaMainView.swift */; };
 		D1DE48CA2B0412C500F5C50F /* GermanyMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DE48C92B0412C500F5C50F /* GermanyMainView.swift */; };
 		D1DE48CC2B0412E700F5C50F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DE48CB2B0412E700F5C50F /* NetworkManager.swift */; };
 		D1DE48CE2B0412FA00F5C50F /* CoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DE48CD2B0412FA00F5C50F /* CoError.swift */; };
 		D1DE48D02B04131100F5C50F /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DE48CF2B04131100F5C50F /* CountryModel.swift */; };
-		D1DE48D22B04133700F5C50F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DE48D12B04133700F5C50F /* MenuView.swift */; };
+		D1DE48D22B04133700F5C50F /* CountryScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DE48D12B04133700F5C50F /* CountryScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A00B32262AFABCD200F4F605 /* ListCountries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCountries.swift; sourceTree = "<group>"; };
+		A00B32262AFABCD200F4F605 /* CountriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListView.swift; sourceTree = "<group>"; };
 		A039224D2AE56AF4009B1020 /* Travel Radar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travel Radar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03922502AE56AF4009B1020 /* Travel_RadarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travel_RadarApp.swift; sourceTree = "<group>"; };
-		A03922522AE56AF4009B1020 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A03922522AE56AF4009B1020 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		A03922542AE56AF5009B1020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A03922572AE56AF5009B1020 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A039225E2AE5772D009B1020 /* ButtonEnter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonEnter.swift; sourceTree = "<group>"; };
+		A039225E2AE5772D009B1020 /* EnterBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterBtn.swift; sourceTree = "<group>"; };
 		A03922622AE577B9009B1020 /* BackgroundMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMainView.swift; sourceTree = "<group>"; };
 		A03922642AE5780D009B1020 /* TextMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMainView.swift; sourceTree = "<group>"; };
 		A03922662AE5788B009B1020 /* TextFieldMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldMainView.swift; sourceTree = "<group>"; };
-		A03922682AE57981009B1020 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		A03922682AE57981009B1020 /* RegisterChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterChoiceView.swift; sourceTree = "<group>"; };
 		A039226A2AE57E2C009B1020 /* TextRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRegisterView.swift; sourceTree = "<group>"; };
-		A039226C2AE58AFE009B1020 /* ButtonRegisterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonRegisterImageView.swift; sourceTree = "<group>"; };
-		A039226E2AE58D94009B1020 /* ButtonRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonRegisterView.swift; sourceTree = "<group>"; };
-		A03922702AE58E4B009B1020 /* RegisterView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView2.swift; sourceTree = "<group>"; };
-		A03922722AE58F04009B1020 /* ButtonMini.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonMini.swift; sourceTree = "<group>"; };
+		A039226C2AE58AFE009B1020 /* AppleRegisterBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleRegisterBtn.swift; sourceTree = "<group>"; };
+		A039226E2AE58D94009B1020 /* RegisterBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBtn.swift; sourceTree = "<group>"; };
+		A03922702AE58E4B009B1020 /* RegisterWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWindowView.swift; sourceTree = "<group>"; };
+		A03922722AE58F04009B1020 /* MiniBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniBtn.swift; sourceTree = "<group>"; };
 		A051D4862AF65A9B00C46391 /* Travel-Radar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Travel-Radar-Info.plist"; sourceTree = SOURCE_ROOT; };
 		A051D4872AF65E1400C46391 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A051D4892AF6775A00C46391 /* AuthGoogleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthGoogleViewModel.swift; sourceTree = "<group>"; };
 		A051D48C2AF678E000C46391 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		A08644C32AEE7E190059A578 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
-		A08644FC2AEE83390059A578 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		A08644FC2AEE83390059A578 /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
 		A08644FE2AEE874A0059A578 /* SecureFieldMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureFieldMainView.swift; sourceTree = "<group>"; };
-		A08645142AEEA36A0059A578 /* CountryTextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryTextButton.swift; sourceTree = "<group>"; };
-		A08645162AEEA38F0059A578 /* SettingsButtonText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsButtonText.swift; sourceTree = "<group>"; };
+		A08645142AEEA36A0059A578 /* CountryBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryBtn.swift; sourceTree = "<group>"; };
+		A08645162AEEA38F0059A578 /* SettingsBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsBtn.swift; sourceTree = "<group>"; };
 		A08645182AEEA3A60059A578 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		A086451A2AEEA4150059A578 /* SettingsText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsText.swift; sourceTree = "<group>"; };
 		A08645202AEFFD160059A578 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A08645232AEFFFD30059A578 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
-		A0C828BC2B0BE37600EA1A10 /* MapOnlyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapOnlyView.swift; sourceTree = "<group>"; };
+		A0C828BC2B0BE37600EA1A10 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A0C828BE2B0BE61800EA1A10 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		A0C828C02B0BF16A00EA1A10 /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
-		D13DC7F82B125B9B006B2CAE /* SlidingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingButton.swift; sourceTree = "<group>"; };
+		D13DC7F82B125B9B006B2CAE /* CountryInfoBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfoBtn.swift; sourceTree = "<group>"; };
 		D144897F2B08A71000D94E68 /* SpainMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpainMainView.swift; sourceTree = "<group>"; };
 		D173A98A2B1886F4000DBDCA /* FranceMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FranceMainView.swift; sourceTree = "<group>"; };
 		D173A98C2B188B4F000DBDCA /* IrelandMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrelandMainView.swift; sourceTree = "<group>"; };
 		D173A98E2B188E69000DBDCA /* PortugalMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortugalMainView.swift; sourceTree = "<group>"; };
 		D173A9902B1890BF000DBDCA /* BrazilMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrazilMainView.swift; sourceTree = "<group>"; };
-		D18EF6212B04CA0800E6C4AF /* CountriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListViewModel.swift; sourceTree = "<group>"; };
+		D173A9932B18D761000DBDCA /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		D173A9952B18D79B000DBDCA /* SignUpEmailInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmailInViewModel.swift; sourceTree = "<group>"; };
+		D173A9972B18D7DC000DBDCA /* GoogleSignInrResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInrResultModel.swift; sourceTree = "<group>"; };
+		D173A9992B18D828000DBDCA /* TabBarItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemModel.swift; sourceTree = "<group>"; };
+		D18EF6212B04CA0800E6C4AF /* NetworkCallModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCallModel.swift; sourceTree = "<group>"; };
 		D18EF6232B04FA0300E6C4AF /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
-		D1DE48C32B04126700F5C50F /* ListViewHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewHStack.swift; sourceTree = "<group>"; };
+		D1DE48C32B04126700F5C50F /* CountriesListBtnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListBtnView.swift; sourceTree = "<group>"; };
 		D1DE48C52B04129500F5C50F /* UKMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UKMainView.swift; sourceTree = "<group>"; };
 		D1DE48C72B0412AD00F5C50F /* UsaMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsaMainView.swift; sourceTree = "<group>"; };
 		D1DE48C92B0412C500F5C50F /* GermanyMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GermanyMainView.swift; sourceTree = "<group>"; };
 		D1DE48CB2B0412E700F5C50F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D1DE48CD2B0412FA00F5C50F /* CoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoError.swift; sourceTree = "<group>"; };
 		D1DE48CF2B04131100F5C50F /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
-		D1DE48D12B04133700F5C50F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		D1DE48D12B04133700F5C50F /* CountryScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,12 +204,11 @@
 			children = (
 				A051D4862AF65A9B00C46391 /* Travel-Radar-Info.plist */,
 				A03922502AE56AF4009B1020 /* Travel_RadarApp.swift */,
-				A08645222AEFFFB00059A578 /* Service */,
-				A086451C2AEEFF960059A578 /* Components */,
-				A08645052AEEA2F00059A578 /* Countries */,
-				A051D48B2AF678C100C46391 /* Utilities */,
 				A03922602AE5777D009B1020 /* Views */,
-				A08645002AEE993F0059A578 /* ViewModel */,
+				D173A99E2B18DC7C000DBDCA /* Models */,
+				D173A99D2B18DA30000DBDCA /* NetworkServices */,
+				A08645222AEFFFB00059A578 /* RegLogInServices */,
+				A086451C2AEEFF960059A578 /* Texts */,
 				A03922562AE56AF5009B1020 /* Preview Content */,
 			);
 			path = "Travel Radar";
@@ -219,69 +226,27 @@
 		A03922602AE5777D009B1020 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A051D4802AF501B300C46391 /* AdminViews */,
+				D173A9A22B18E210000DBDCA /* RegistrationLogIn */,
+				D173A9A12B18E1DB000DBDCA /* Main */,
+				D173A9A02B18E1B1000DBDCA /* TabBar */,
+				D173A99F2B18E15B000DBDCA /* CountriesList */,
+				A08645052AEEA2F00059A578 /* Countries */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		A03922612AE57794009B1020 /* Buttons */ = {
+		A03922612AE57794009B1020 /* ButtonsTexts */ = {
 			isa = PBXGroup;
 			children = (
-				A08645162AEEA38F0059A578 /* SettingsButtonText.swift */,
-				A08645142AEEA36A0059A578 /* CountryTextButton.swift */,
-				A039225E2AE5772D009B1020 /* ButtonEnter.swift */,
-				A039226E2AE58D94009B1020 /* ButtonRegisterView.swift */,
-				A03922722AE58F04009B1020 /* ButtonMini.swift */,
-				A039226C2AE58AFE009B1020 /* ButtonRegisterImageView.swift */,
+				A08645162AEEA38F0059A578 /* SettingsBtn.swift */,
+				A08645142AEEA36A0059A578 /* CountryBtn.swift */,
+				A039225E2AE5772D009B1020 /* EnterBtn.swift */,
+				A039226E2AE58D94009B1020 /* RegisterBtn.swift */,
+				A03922722AE58F04009B1020 /* MiniBtn.swift */,
+				A039226C2AE58AFE009B1020 /* AppleRegisterBtn.swift */,
+				D13DC7F82B125B9B006B2CAE /* CountryInfoBtn.swift */,
 			);
-			path = Buttons;
-			sourceTree = "<group>";
-		};
-		A051D4802AF501B300C46391 /* AdminViews */ = {
-			isa = PBXGroup;
-			children = (
-				A08644FC2AEE83390059A578 /* MapView.swift */,
-				A0C828BE2B0BE61800EA1A10 /* CustomTabBarView.swift */,
-				A0C828C02B0BF16A00EA1A10 /* CustomTabBarContainerView.swift */,
-				A00B32262AFABCD200F4F605 /* ListCountries.swift */,
-				A03922682AE57981009B1020 /* RegisterView.swift */,
-				A03922702AE58E4B009B1020 /* RegisterView2.swift */,
-				A0C828BC2B0BE37600EA1A10 /* MapOnlyView.swift */,
-				A03922522AE56AF4009B1020 /* ContentView.swift */,
-				A08645182AEEA3A60059A578 /* SettingsView.swift */,
-			);
-			path = AdminViews;
-			sourceTree = "<group>";
-		};
-		A051D48B2AF678C100C46391 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				A051D48C2AF678E000C46391 /* Utilities.swift */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		A08644B52AEE586C0059A578 /* Registration */ = {
-			isa = PBXGroup;
-			children = (
-				A08645232AEFFFD30059A578 /* AuthManager.swift */,
-				A051D4872AF65E1400C46391 /* GoogleService-Info.plist */,
-				A08644C32AEE7E190059A578 /* AuthService.swift */,
-			);
-			path = Registration;
-			sourceTree = "<group>";
-		};
-		A08645002AEE993F0059A578 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				D1DE48CB2B0412E700F5C50F /* NetworkManager.swift */,
-				D1DE48CD2B0412FA00F5C50F /* CoError.swift */,
-				D1DE48CF2B04131100F5C50F /* CountryModel.swift */,
-				A051D4892AF6775A00C46391 /* AuthGoogleViewModel.swift */,
-				D18EF6212B04CA0800E6C4AF /* CountriesListViewModel.swift */,
-				D18EF6232B04FA0300E6C4AF /* Alert.swift */,
-			);
-			path = ViewModel;
+			path = ButtonsTexts;
 			sourceTree = "<group>";
 		};
 		A08645052AEEA2F00059A578 /* Countries */ = {
@@ -299,54 +264,101 @@
 			path = Countries;
 			sourceTree = "<group>";
 		};
-		A086451C2AEEFF960059A578 /* Components */ = {
+		A086451C2AEEFF960059A578 /* Texts */ = {
 			isa = PBXGroup;
 			children = (
-				A03922612AE57794009B1020 /* Buttons */,
-				A086451F2AEF00590059A578 /* Register */,
-				A086451D2AEF00260059A578 /* Settings */,
-				A086451E2AEF003A0059A578 /* Main(Content) */,
+				D173A9922B189DC0000DBDCA /* LabelTexts */,
+				A03922612AE57794009B1020 /* ButtonsTexts */,
 			);
-			path = Components;
+			path = Texts;
 			sourceTree = "<group>";
 		};
-		A086451D2AEF00260059A578 /* Settings */ = {
+		A08645222AEFFFB00059A578 /* RegLogInServices */ = {
 			isa = PBXGroup;
 			children = (
-				A086451A2AEEA4150059A578 /* SettingsText.swift */,
+				A051D48C2AF678E000C46391 /* Utilities.swift */,
+				A08645232AEFFFD30059A578 /* AuthManager.swift */,
+				A08644C32AEE7E190059A578 /* AuthService.swift */,
+				A08645202AEFFD160059A578 /* User.swift */,
+				A051D4892AF6775A00C46391 /* AuthGoogleViewModel.swift */,
+				A051D4872AF65E1400C46391 /* GoogleService-Info.plist */,
 			);
-			path = Settings;
+			path = RegLogInServices;
 			sourceTree = "<group>";
 		};
-		A086451E2AEF003A0059A578 /* Main(Content) */ = {
-			isa = PBXGroup;
-			children = (
-				A08644FE2AEE874A0059A578 /* SecureFieldMainView.swift */,
-				A03922642AE5780D009B1020 /* TextMainView.swift */,
-				A03922662AE5788B009B1020 /* TextFieldMainView.swift */,
-				A03922622AE577B9009B1020 /* BackgroundMainView.swift */,
-				D1DE48C32B04126700F5C50F /* ListViewHStack.swift */,
-				D1DE48D12B04133700F5C50F /* MenuView.swift */,
-				D13DC7F82B125B9B006B2CAE /* SlidingButton.swift */,
-			);
-			path = "Main(Content)";
-			sourceTree = "<group>";
-		};
-		A086451F2AEF00590059A578 /* Register */ = {
+		D173A9922B189DC0000DBDCA /* LabelTexts */ = {
 			isa = PBXGroup;
 			children = (
 				A039226A2AE57E2C009B1020 /* TextRegisterView.swift */,
-				A08645202AEFFD160059A578 /* User.swift */,
+				A086451A2AEEA4150059A578 /* SettingsText.swift */,
+				A03922642AE5780D009B1020 /* TextMainView.swift */,
+				A03922662AE5788B009B1020 /* TextFieldMainView.swift */,
 			);
-			path = Register;
+			path = LabelTexts;
 			sourceTree = "<group>";
 		};
-		A08645222AEFFFB00059A578 /* Service */ = {
+		D173A99D2B18DA30000DBDCA /* NetworkServices */ = {
 			isa = PBXGroup;
 			children = (
-				A08644B52AEE586C0059A578 /* Registration */,
+				D1DE48CB2B0412E700F5C50F /* NetworkManager.swift */,
+				D1DE48CD2B0412FA00F5C50F /* CoError.swift */,
+				D1DE48CF2B04131100F5C50F /* CountryModel.swift */,
+				D18EF6232B04FA0300E6C4AF /* Alert.swift */,
+				D18EF6212B04CA0800E6C4AF /* NetworkCallModel.swift */,
 			);
-			path = Service;
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
+		D173A99E2B18DC7C000DBDCA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D173A9932B18D761000DBDCA /* SettingsViewModel.swift */,
+				D173A9952B18D79B000DBDCA /* SignUpEmailInViewModel.swift */,
+				D173A9992B18D828000DBDCA /* TabBarItemModel.swift */,
+				D173A9972B18D7DC000DBDCA /* GoogleSignInrResultModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D173A99F2B18E15B000DBDCA /* CountriesList */ = {
+			isa = PBXGroup;
+			children = (
+				D1DE48C32B04126700F5C50F /* CountriesListBtnView.swift */,
+				A00B32262AFABCD200F4F605 /* CountriesListView.swift */,
+			);
+			path = CountriesList;
+			sourceTree = "<group>";
+		};
+		D173A9A02B18E1B1000DBDCA /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A0C828BE2B0BE61800EA1A10 /* CustomTabBarView.swift */,
+				A0C828C02B0BF16A00EA1A10 /* CustomTabBarContainerView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		D173A9A12B18E1DB000DBDCA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A08645182AEEA3A60059A578 /* SettingsView.swift */,
+				A08644FC2AEE83390059A578 /* MainAppView.swift */,
+				A0C828BC2B0BE37600EA1A10 /* MapView.swift */,
+				D1DE48D12B04133700F5C50F /* CountryScreenView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D173A9A22B18E210000DBDCA /* RegistrationLogIn */ = {
+			isa = PBXGroup;
+			children = (
+				A08644FE2AEE874A0059A578 /* SecureFieldMainView.swift */,
+				A03922622AE577B9009B1020 /* BackgroundMainView.swift */,
+				A03922682AE57981009B1020 /* RegisterChoiceView.swift */,
+				A03922702AE58E4B009B1020 /* RegisterWindowView.swift */,
+				A03922522AE56AF4009B1020 /* LogInView.swift */,
+			);
+			path = RegistrationLogIn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,46 +469,50 @@
 			files = (
 				D173A98D2B188B4F000DBDCA /* IrelandMainView.swift in Sources */,
 				A08645242AEFFFD30059A578 /* AuthManager.swift in Sources */,
-				A08644FD2AEE83390059A578 /* MapView.swift in Sources */,
-				A03922732AE58F04009B1020 /* ButtonMini.swift in Sources */,
+				A08644FD2AEE83390059A578 /* MainAppView.swift in Sources */,
+				A03922732AE58F04009B1020 /* MiniBtn.swift in Sources */,
 				A03922632AE577B9009B1020 /* BackgroundMainView.swift in Sources */,
-				D13DC7F92B125B9B006B2CAE /* SlidingButton.swift in Sources */,
-				D1DE48C42B04126700F5C50F /* ListViewHStack.swift in Sources */,
+				D13DC7F92B125B9B006B2CAE /* CountryInfoBtn.swift in Sources */,
+				D1DE48C42B04126700F5C50F /* CountriesListBtnView.swift in Sources */,
 				A051D48D2AF678E000C46391 /* Utilities.swift in Sources */,
 				A086451B2AEEA4150059A578 /* SettingsText.swift in Sources */,
-				A039226F2AE58D94009B1020 /* ButtonRegisterView.swift in Sources */,
-				A03922532AE56AF4009B1020 /* ContentView.swift in Sources */,
+				A039226F2AE58D94009B1020 /* RegisterBtn.swift in Sources */,
+				A03922532AE56AF4009B1020 /* LogInView.swift in Sources */,
 				A03922652AE5780D009B1020 /* TextMainView.swift in Sources */,
 				D14489802B08A71000D94E68 /* SpainMainView.swift in Sources */,
-				A08645172AEEA38F0059A578 /* SettingsButtonText.swift in Sources */,
-				A00B32272AFABCD200F4F605 /* ListCountries.swift in Sources */,
-				A03922692AE57981009B1020 /* RegisterView.swift in Sources */,
+				A08645172AEEA38F0059A578 /* SettingsBtn.swift in Sources */,
+				A00B32272AFABCD200F4F605 /* CountriesListView.swift in Sources */,
+				A03922692AE57981009B1020 /* RegisterChoiceView.swift in Sources */,
 				A08644C42AEE7E190059A578 /* AuthService.swift in Sources */,
 				D1DE48CC2B0412E700F5C50F /* NetworkManager.swift in Sources */,
 				A03922672AE5788B009B1020 /* TextFieldMainView.swift in Sources */,
+				D173A99A2B18D828000DBDCA /* TabBarItemModel.swift in Sources */,
+				D173A9942B18D761000DBDCA /* SettingsViewModel.swift in Sources */,
 				D1DE48CA2B0412C500F5C50F /* GermanyMainView.swift in Sources */,
 				A08644FF2AEE874A0059A578 /* SecureFieldMainView.swift in Sources */,
-				A08645152AEEA36A0059A578 /* CountryTextButton.swift in Sources */,
-				A03922712AE58E4B009B1020 /* RegisterView2.swift in Sources */,
+				A08645152AEEA36A0059A578 /* CountryBtn.swift in Sources */,
+				A03922712AE58E4B009B1020 /* RegisterWindowView.swift in Sources */,
 				D18EF6242B04FA0300E6C4AF /* Alert.swift in Sources */,
 				A08645212AEFFD160059A578 /* User.swift in Sources */,
-				A039225F2AE5772D009B1020 /* ButtonEnter.swift in Sources */,
+				A039225F2AE5772D009B1020 /* EnterBtn.swift in Sources */,
 				A039226B2AE57E2C009B1020 /* TextRegisterView.swift in Sources */,
+				D173A9982B18D7DC000DBDCA /* GoogleSignInrResultModel.swift in Sources */,
 				A0C828C12B0BF16A00EA1A10 /* CustomTabBarContainerView.swift in Sources */,
+				D173A9962B18D79B000DBDCA /* SignUpEmailInViewModel.swift in Sources */,
 				A0C828BF2B0BE61800EA1A10 /* CustomTabBarView.swift in Sources */,
 				A051D48A2AF6775A00C46391 /* AuthGoogleViewModel.swift in Sources */,
 				D1DE48C82B0412AD00F5C50F /* UsaMainView.swift in Sources */,
 				D173A98B2B1886F4000DBDCA /* FranceMainView.swift in Sources */,
-				A0C828BD2B0BE37600EA1A10 /* MapOnlyView.swift in Sources */,
-				D1DE48D22B04133700F5C50F /* MenuView.swift in Sources */,
+				A0C828BD2B0BE37600EA1A10 /* MapView.swift in Sources */,
+				D1DE48D22B04133700F5C50F /* CountryScreenView.swift in Sources */,
 				D1DE48D02B04131100F5C50F /* CountryModel.swift in Sources */,
 				D173A98F2B188E69000DBDCA /* PortugalMainView.swift in Sources */,
 				D173A9912B1890BF000DBDCA /* BrazilMainView.swift in Sources */,
 				A03922512AE56AF4009B1020 /* Travel_RadarApp.swift in Sources */,
 				D1DE48CE2B0412FA00F5C50F /* CoError.swift in Sources */,
 				D1DE48C62B04129500F5C50F /* UKMainView.swift in Sources */,
-				A039226D2AE58AFE009B1020 /* ButtonRegisterImageView.swift in Sources */,
-				D18EF6222B04CA0800E6C4AF /* CountriesListViewModel.swift in Sources */,
+				A039226D2AE58AFE009B1020 /* AppleRegisterBtn.swift in Sources */,
+				D18EF6222B04CA0800E6C4AF /* NetworkCallModel.swift in Sources */,
 				A08645192AEEA3A60059A578 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
