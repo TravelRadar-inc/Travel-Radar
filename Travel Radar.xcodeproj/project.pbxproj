@@ -68,6 +68,10 @@
 		A0C828C12B0BF16A00EA1A10 /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828C02B0BF16A00EA1A10 /* CustomTabBarContainerView.swift */; };
 		D13DC7F92B125B9B006B2CAE /* SlidingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13DC7F82B125B9B006B2CAE /* SlidingButton.swift */; };
 		D14489802B08A71000D94E68 /* SpainMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D144897F2B08A71000D94E68 /* SpainMainView.swift */; };
+		D173A98B2B1886F4000DBDCA /* FranceMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173A98A2B1886F4000DBDCA /* FranceMainView.swift */; };
+		D173A98D2B188B4F000DBDCA /* IrelandMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173A98C2B188B4F000DBDCA /* IrelandMainView.swift */; };
+		D173A98F2B188E69000DBDCA /* PortugalMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173A98E2B188E69000DBDCA /* PortugalMainView.swift */; };
+		D173A9912B1890BF000DBDCA /* BrazilMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173A9902B1890BF000DBDCA /* BrazilMainView.swift */; };
 		D18EF6222B04CA0800E6C4AF /* CountriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18EF6212B04CA0800E6C4AF /* CountriesListViewModel.swift */; };
 		D18EF6242B04FA0300E6C4AF /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18EF6232B04FA0300E6C4AF /* Alert.swift */; };
 		D1DE48C42B04126700F5C50F /* ListViewHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DE48C32B04126700F5C50F /* ListViewHStack.swift */; };
@@ -115,6 +119,10 @@
 		A0C828C02B0BF16A00EA1A10 /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
 		D13DC7F82B125B9B006B2CAE /* SlidingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingButton.swift; sourceTree = "<group>"; };
 		D144897F2B08A71000D94E68 /* SpainMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpainMainView.swift; sourceTree = "<group>"; };
+		D173A98A2B1886F4000DBDCA /* FranceMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FranceMainView.swift; sourceTree = "<group>"; };
+		D173A98C2B188B4F000DBDCA /* IrelandMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrelandMainView.swift; sourceTree = "<group>"; };
+		D173A98E2B188E69000DBDCA /* PortugalMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortugalMainView.swift; sourceTree = "<group>"; };
+		D173A9902B1890BF000DBDCA /* BrazilMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrazilMainView.swift; sourceTree = "<group>"; };
 		D18EF6212B04CA0800E6C4AF /* CountriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListViewModel.swift; sourceTree = "<group>"; };
 		D18EF6232B04FA0300E6C4AF /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		D1DE48C32B04126700F5C50F /* ListViewHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewHStack.swift; sourceTree = "<group>"; };
@@ -193,7 +201,6 @@
 				A08645052AEEA2F00059A578 /* Countries */,
 				A051D48B2AF678C100C46391 /* Utilities */,
 				A03922602AE5777D009B1020 /* Views */,
-				A03922542AE56AF5009B1020 /* Assets.xcassets */,
 				A08645002AEE993F0059A578 /* ViewModel */,
 				A03922562AE56AF5009B1020 /* Preview Content */,
 			);
@@ -203,6 +210,7 @@
 		A03922562AE56AF5009B1020 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				A03922542AE56AF5009B1020 /* Assets.xcassets */,
 				A03922572AE56AF5009B1020 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -212,15 +220,6 @@
 			isa = PBXGroup;
 			children = (
 				A051D4802AF501B300C46391 /* AdminViews */,
-				A08645182AEEA3A60059A578 /* SettingsView.swift */,
-				A03922522AE56AF4009B1020 /* ContentView.swift */,
-				A08644FC2AEE83390059A578 /* MapView.swift */,
-				A0C828BE2B0BE61800EA1A10 /* CustomTabBarView.swift */,
-				A0C828C02B0BF16A00EA1A10 /* CustomTabBarContainerView.swift */,
-				A00B32262AFABCD200F4F605 /* ListCountries.swift */,
-				A03922682AE57981009B1020 /* RegisterView.swift */,
-				A03922702AE58E4B009B1020 /* RegisterView2.swift */,
-				A0C828BC2B0BE37600EA1A10 /* MapOnlyView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -241,6 +240,15 @@
 		A051D4802AF501B300C46391 /* AdminViews */ = {
 			isa = PBXGroup;
 			children = (
+				A08644FC2AEE83390059A578 /* MapView.swift */,
+				A0C828BE2B0BE61800EA1A10 /* CustomTabBarView.swift */,
+				A0C828C02B0BF16A00EA1A10 /* CustomTabBarContainerView.swift */,
+				A00B32262AFABCD200F4F605 /* ListCountries.swift */,
+				A03922682AE57981009B1020 /* RegisterView.swift */,
+				A03922702AE58E4B009B1020 /* RegisterView2.swift */,
+				A0C828BC2B0BE37600EA1A10 /* MapOnlyView.swift */,
+				A03922522AE56AF4009B1020 /* ContentView.swift */,
+				A08645182AEEA3A60059A578 /* SettingsView.swift */,
 			);
 			path = AdminViews;
 			sourceTree = "<group>";
@@ -283,6 +291,10 @@
 				D1DE48C72B0412AD00F5C50F /* UsaMainView.swift */,
 				D1DE48C92B0412C500F5C50F /* GermanyMainView.swift */,
 				D144897F2B08A71000D94E68 /* SpainMainView.swift */,
+				D173A98A2B1886F4000DBDCA /* FranceMainView.swift */,
+				D173A98C2B188B4F000DBDCA /* IrelandMainView.swift */,
+				D173A98E2B188E69000DBDCA /* PortugalMainView.swift */,
+				D173A9902B1890BF000DBDCA /* BrazilMainView.swift */,
 			);
 			path = Countries;
 			sourceTree = "<group>";
@@ -443,6 +455,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D173A98D2B188B4F000DBDCA /* IrelandMainView.swift in Sources */,
 				A08645242AEFFFD30059A578 /* AuthManager.swift in Sources */,
 				A08644FD2AEE83390059A578 /* MapView.swift in Sources */,
 				A03922732AE58F04009B1020 /* ButtonMini.swift in Sources */,
@@ -473,9 +486,12 @@
 				A0C828BF2B0BE61800EA1A10 /* CustomTabBarView.swift in Sources */,
 				A051D48A2AF6775A00C46391 /* AuthGoogleViewModel.swift in Sources */,
 				D1DE48C82B0412AD00F5C50F /* UsaMainView.swift in Sources */,
+				D173A98B2B1886F4000DBDCA /* FranceMainView.swift in Sources */,
 				A0C828BD2B0BE37600EA1A10 /* MapOnlyView.swift in Sources */,
 				D1DE48D22B04133700F5C50F /* MenuView.swift in Sources */,
 				D1DE48D02B04131100F5C50F /* CountryModel.swift in Sources */,
+				D173A98F2B188E69000DBDCA /* PortugalMainView.swift in Sources */,
+				D173A9912B1890BF000DBDCA /* BrazilMainView.swift in Sources */,
 				A03922512AE56AF4009B1020 /* Travel_RadarApp.swift in Sources */,
 				D1DE48CE2B0412FA00F5C50F /* CoError.swift in Sources */,
 				D1DE48C62B04129500F5C50F /* UKMainView.swift in Sources */,

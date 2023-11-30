@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SpainMainView: View {
+struct FranceMainView: View {
     @StateObject var ViewModel = CountriesListViewModel()
     
     var body: some View {
@@ -10,22 +10,22 @@ struct SpainMainView: View {
             
             VStack {
                 ForEach (ViewModel.countries, id: \.id) {country in
-                    MenuView(CountryImage1: "Spain 1", CountryImage2: "Spain 2", CountryImage3: "Spain 3", CountryImage4: "Spain 4", country: country)
+                    MenuView(CountryImage1: "France1", CountryImage2: "France2", CountryImage3: "France3", CountryImage4: "France4", country: country)
                 }
             }
             .onAppear{
-                ViewModel.getCountryNetwork(whichCountryToGet1: "Spain")
+                ViewModel.getCountryNetwork(whichCountryToGet1: "France")
             }
             .alert(item: $ViewModel.alertItem) { alertItem in
                 Alert(title: alertItem.title,
                       message: alertItem.message,
                       dismissButton: alertItem.dismissButton)
-        }
+            }
         }
     }
     
 }
 
 #Preview {
-    SpainMainView()
+    FranceMainView()
 }

@@ -18,7 +18,7 @@ struct ListCountries: View {
                 }
                 
                 NavigationLink{
-                    UKMainView()
+                    FranceMainView()
                 } label:{
                     ListViewHStack(flagName: "FranceFlag", nameOfCountry: "Франция")
                 }
@@ -30,7 +30,7 @@ struct ListCountries: View {
                 }
                 
                 NavigationLink{
-                    UKMainView()
+                    IrelandMainView()
                 } label:{
                     ListViewHStack(flagName: "IrelandFlag", nameOfCountry: "Ирландия")
                 }
@@ -42,18 +42,22 @@ struct ListCountries: View {
                 }
                 
                 NavigationLink{
-                    UKMainView()
+                    SpainMainView()
                 } label:{
                     ListViewHStack(flagName: "SpainFlag", nameOfCountry: "Испания")
                 }
                 
                 NavigationLink{
-                    UKMainView()
+                    PortugalMainView()
                 } label:{
                     ListViewHStack(flagName: "PortugalFlag", nameOfCountry: "Португалия")
                 }
                 
-                
+                NavigationLink{
+                    BrazilMainView()
+                } label:{
+                    ListViewHStack(flagName: "BrazilFlag", nameOfCountry: "Бразилия")
+                }
             }
         }
         //.navigationTitle("Список стран")

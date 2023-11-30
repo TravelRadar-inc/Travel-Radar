@@ -20,9 +20,13 @@ struct SlidingButton: View {
             }
 
             if isShowedSomething {
+                HStack{
                     Text(textOfElement)
-                        .font(.title2)
-                        .padding(.top, 10)
+                            .font(.title2)
+                            .padding(.top, 10)
+                    
+                    Spacer()
+                }
             }
         }
         .padding()
