@@ -11,7 +11,6 @@ struct ButtonRegisterImageView: View {
                 .frame(width: 30, height: 30)
             Text(text)
         }.padding()
-            //.padding(.horizontal, 25)
             .background(Color("prosrachniiBerusovii"))
             .cornerRadius(20)
             .font(.system(size: 20))

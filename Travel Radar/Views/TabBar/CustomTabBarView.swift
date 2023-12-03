@@ -1,8 +1,33 @@
 import SwiftUI
 struct CustomTabBarView: View {
-    let tabs: [TabBarItemModel]
-    @Binding var selection: TabBarItemModel
+    let tabs: [TabBarItem]
+    @Binding var selection: TabBarItem
+    @Namespace private var namespace
     var body: some View {
+        tabBarVersion2
+    }
+}
+struct CustomTabBarView_Previews: PreviewProvider{
+    static let tabs: [TabBarItem] = [.list, .map, .settings]
+    static var previews: some View{
+        CustomTabBarView(tabs: tabs, selection: .constant(tabs.first!))
+    }
+}
+
+extension CustomTabBarView{
+    private func tabView(tab: TabBarItem) -> some View{
+        VStack{
+            Image(systemName: tab.iconName)
+            Text(tab.title)
+                .font(.system(size: 10, weight: .semibold, design: .rounded))
+        }.foregroundColor(.black)
+            .padding(.vertical, 8)
+            .frame(maxWidth:.infinity)
+            .background(selection == tab ? Color("conditionsColor").opacity(0.4) : Color.clear)
+            .cornerRadius(16)
+    }
+    
+    private var tabBarVersion1: some View{
         HStack{
             ForEach(tabs, id: \.self) { tab in
                 tabView(tab: tab)
@@ -14,16 +39,16 @@ struct CustomTabBarView: View {
         .padding(6)
         .background(Color.clear.ignoresSafeArea(edges: .bottom))
     }
-}
-struct CustomTabBarView_Previews: PreviewProvider{
-    static let tabs: [TabBarItemModel] = [TabBarItemModel(iconName: "list.bullet.clipboard", title: "Список стран"), TabBarItemModel(iconName: "map", title: "Карта"), TabBarItemModel(iconName: "gearshape", title: "Настройки")]
-    static var previews: some View{
-        CustomTabBarView(tabs: tabs, selection: .constant(tabs.first!))
+    
+    private func switchToTab(tab: TabBarItem){
+        withAnimation(.easeInOut){
+           selection = tab
+        }
     }
 }
 
 extension CustomTabBarView{
-    private func tabView(tab: TabBarItemModel) -> some View{
+    private func tabView2(tab: TabBarItem) -> some View{
         VStack{
             Image(systemName: tab.iconName)
             Text(tab.title)
@@ -31,14 +56,31 @@ extension CustomTabBarView{
         }.foregroundColor(.black)
             .padding(.vertical, 8)
             .frame(maxWidth:.infinity)
-            .background(selection == tab ? Color("conditionsColor").opacity(0.4) : Color.clear)
+            .background(
+                ZStack{
+                    if selection == tab{
+                        RoundedRectangle(cornerRadius: 16)
+                            .fill(Color("conditionsColor").opacity(0.3))
+                            .matchedGeometryEffect(id: "background_rectangle", in: namespace)
+                    }
+                }
+            )
             .cornerRadius(16)
     }
-    private func switchToTab(tab: TabBarItemModel){
-        withAnimation(.easeInOut){
-           selection = tab
+    
+    private var tabBarVersion2: some View{
+        HStack{
+            ForEach(tabs, id: \.self) { tab in
+                tabView2(tab: tab)
+                    .onTapGesture {
+                        switchToTab(tab: tab)
+                    }
+            }
         }
+        .padding(6)
+        .background(Color.white.ignoresSafeArea(edges: .bottom))
+        .cornerRadius(16)
+        .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 5)
+        .padding(.horizontal)
     }
 }
-
-

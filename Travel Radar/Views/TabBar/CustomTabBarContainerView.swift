@@ -1,24 +1,27 @@
 import SwiftUI
 struct CustomTabBarContainerView<Content: View>: View {
     let content: Content
-    @Binding var selection: TabBarItemModel
-    @State private var tabs: [TabBarItemModel] = []
-    init(selection: Binding<TabBarItemModel>, @ViewBuilder content: () -> Content){
+    @Binding var selection: TabBarItem
+    @State private var tabs: [TabBarItem] = []
+    init(selection: Binding<TabBarItem>, @ViewBuilder content: () -> Content){
         self._selection = selection
         self.content = content()
     }
     var body: some View {
-        VStack(spacing: 0){
-            ZStack{
-                content
-            }
+        ZStack(alignment: .bottom){
+            content
+                .ignoresSafeArea()
             CustomTabBarView(tabs: tabs, selection: $selection)
         }
+
+        .onPreferenceChange(TabBarItemsPreferenceKey.self, perform: { value in
+            self.tabs = value
+        })
     }
 }
 
 struct CustomTabBarContainerView_Previews: PreviewProvider{
-    static let tabs: [TabBarItemModel] = [TabBarItemModel(iconName: "list.bullet.clipboard", title: "Список стран"), TabBarItemModel(iconName: "map", title: "Карта"), TabBarItemModel(iconName: "gearshape", title: "Настройки")]
+    static let tabs: [TabBarItem] = [.list, .map, .settings]
     static var previews: some View{
         CustomTabBarContainerView(selection: .constant(tabs.first!)) {
             CountriesListView()

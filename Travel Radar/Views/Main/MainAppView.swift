@@ -11,24 +11,17 @@ final class MapViewModelView: ObservableObject{
 
 struct MainAppView: View {
     @StateObject private var viewModel = MapViewModelView()
+    @State private var tabSelection: TabBarItem = .map
     var body: some View {
         NavigationStack{
-            TabView(selection: $viewModel.selection){
+            CustomTabBarContainerView(selection: $tabSelection){
                 CountriesListView()
-                    .tabItem {
-                        Image(systemName: "list.bullet.clipboard")
-                        Text("Список стран")
-                    }
+                    .tabBarItem(tab: .list, selection: $tabSelection)
                 MapView()
-                    .tabItem {
-                        Image(systemName: "map")
-                        Text("Карта")
-                    }
+                    .tabBarItem(tab: .map, selection: $tabSelection)
                 SettingsView()
-                    .tabItem {
-                        Image(systemName: "gearshape")
-                        Text("Настройки")
-                    }
+                //Color.red
+                    .tabBarItem(tab: .settings, selection: $tabSelection)
             }
         }
         .onAppear{
@@ -42,4 +35,24 @@ struct MainAppView: View {
 #Preview {
     MainAppView()
 }
-
+extension MainAppView{
+    private var defaultTabView: some View{
+        TabView(selection: $viewModel.selection){
+            CountriesListView()
+                .tabItem {
+                    Image(systemName: "list.bullet.clipboard")
+                    Text("Список стран")
+                }
+            MapView()
+                .tabItem {
+                    Image(systemName: "map")
+                    Text("Карта")
+                }
+            SettingsView()
+                .tabItem {
+                    Image(systemName: "gearshape")
+                    Text("Настройки")
+                }
+        }
+    }
+}

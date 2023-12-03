@@ -63,6 +63,9 @@
 		A086451B2AEEA4150059A578 /* SettingsText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A086451A2AEEA4150059A578 /* SettingsText.swift */; };
 		A08645212AEFFD160059A578 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08645202AEFFD160059A578 /* User.swift */; };
 		A08645242AEFFFD30059A578 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08645232AEFFFD30059A578 /* AuthManager.swift */; };
+		A0896CE82B1CA16100A6AFC7 /* EmailSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0896CE72B1CA16100A6AFC7 /* EmailSectionView.swift */; };
+		A0896CEB2B1CEBC800A6AFC7 /* TabBarItemsPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0896CEA2B1CEBC800A6AFC7 /* TabBarItemsPreferenceKey.swift */; };
+		A0896CED2B1D07DA00A6AFC7 /* SettingsLogOutBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0896CEC2B1D07DA00A6AFC7 /* SettingsLogOutBtn.swift */; };
 		A0C828BD2B0BE37600EA1A10 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828BC2B0BE37600EA1A10 /* MapView.swift */; };
 		A0C828BF2B0BE61800EA1A10 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828BE2B0BE61800EA1A10 /* CustomTabBarView.swift */; };
 		A0C828C12B0BF16A00EA1A10 /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828C02B0BF16A00EA1A10 /* CustomTabBarContainerView.swift */; };
@@ -74,8 +77,8 @@
 		D173A9912B1890BF000DBDCA /* BrazilMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173A9902B1890BF000DBDCA /* BrazilMainView.swift */; };
 		D173A9942B18D761000DBDCA /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173A9932B18D761000DBDCA /* SettingsViewModel.swift */; };
 		D173A9962B18D79B000DBDCA /* SignUpEmailInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173A9952B18D79B000DBDCA /* SignUpEmailInViewModel.swift */; };
-		D173A9982B18D7DC000DBDCA /* GoogleSignInrResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173A9972B18D7DC000DBDCA /* GoogleSignInrResultModel.swift */; };
-		D173A99A2B18D828000DBDCA /* TabBarItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173A9992B18D828000DBDCA /* TabBarItemModel.swift */; };
+		D173A9982B18D7DC000DBDCA /* GoogleSignInHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173A9972B18D7DC000DBDCA /* GoogleSignInHelper.swift */; };
+		D173A99A2B18D828000DBDCA /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173A9992B18D828000DBDCA /* TabBarItem.swift */; };
 		D18EF6222B04CA0800E6C4AF /* NetworkCallModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18EF6212B04CA0800E6C4AF /* NetworkCallModel.swift */; };
 		D18EF6242B04FA0300E6C4AF /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18EF6232B04FA0300E6C4AF /* Alert.swift */; };
 		D1DE48C42B04126700F5C50F /* CountriesListBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DE48C32B04126700F5C50F /* CountriesListBtnView.swift */; };
@@ -118,6 +121,9 @@
 		A086451A2AEEA4150059A578 /* SettingsText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsText.swift; sourceTree = "<group>"; };
 		A08645202AEFFD160059A578 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A08645232AEFFFD30059A578 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		A0896CE72B1CA16100A6AFC7 /* EmailSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSectionView.swift; sourceTree = "<group>"; };
+		A0896CEA2B1CEBC800A6AFC7 /* TabBarItemsPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemsPreferenceKey.swift; sourceTree = "<group>"; };
+		A0896CEC2B1D07DA00A6AFC7 /* SettingsLogOutBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLogOutBtn.swift; sourceTree = "<group>"; };
 		A0C828BC2B0BE37600EA1A10 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A0C828BE2B0BE61800EA1A10 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		A0C828C02B0BF16A00EA1A10 /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
@@ -129,8 +135,8 @@
 		D173A9902B1890BF000DBDCA /* BrazilMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrazilMainView.swift; sourceTree = "<group>"; };
 		D173A9932B18D761000DBDCA /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		D173A9952B18D79B000DBDCA /* SignUpEmailInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmailInViewModel.swift; sourceTree = "<group>"; };
-		D173A9972B18D7DC000DBDCA /* GoogleSignInrResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInrResultModel.swift; sourceTree = "<group>"; };
-		D173A9992B18D828000DBDCA /* TabBarItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemModel.swift; sourceTree = "<group>"; };
+		D173A9972B18D7DC000DBDCA /* GoogleSignInHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInHelper.swift; sourceTree = "<group>"; };
+		D173A9992B18D828000DBDCA /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		D18EF6212B04CA0800E6C4AF /* NetworkCallModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCallModel.swift; sourceTree = "<group>"; };
 		D18EF6232B04FA0300E6C4AF /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		D1DE48C32B04126700F5C50F /* CountriesListBtnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListBtnView.swift; sourceTree = "<group>"; };
@@ -238,6 +244,7 @@
 		A03922612AE57794009B1020 /* ButtonsTexts */ = {
 			isa = PBXGroup;
 			children = (
+				A0896CEC2B1D07DA00A6AFC7 /* SettingsLogOutBtn.swift */,
 				A08645162AEEA38F0059A578 /* SettingsBtn.swift */,
 				A08645142AEEA36A0059A578 /* CountryBtn.swift */,
 				A039225E2AE5772D009B1020 /* EnterBtn.swift */,
@@ -286,6 +293,15 @@
 			path = RegLogInServices;
 			sourceTree = "<group>";
 		};
+		A0896CE92B1CA18600A6AFC7 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A0896CE72B1CA16100A6AFC7 /* EmailSectionView.swift */,
+				A08645182AEEA3A60059A578 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		D173A9922B189DC0000DBDCA /* LabelTexts */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,8 +330,7 @@
 			children = (
 				D173A9932B18D761000DBDCA /* SettingsViewModel.swift */,
 				D173A9952B18D79B000DBDCA /* SignUpEmailInViewModel.swift */,
-				D173A9992B18D828000DBDCA /* TabBarItemModel.swift */,
-				D173A9972B18D7DC000DBDCA /* GoogleSignInrResultModel.swift */,
+				D173A9972B18D7DC000DBDCA /* GoogleSignInHelper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -334,6 +349,8 @@
 			children = (
 				A0C828BE2B0BE61800EA1A10 /* CustomTabBarView.swift */,
 				A0C828C02B0BF16A00EA1A10 /* CustomTabBarContainerView.swift */,
+				A0896CEA2B1CEBC800A6AFC7 /* TabBarItemsPreferenceKey.swift */,
+				D173A9992B18D828000DBDCA /* TabBarItem.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -341,7 +358,7 @@
 		D173A9A12B18E1DB000DBDCA /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				A08645182AEEA3A60059A578 /* SettingsView.swift */,
+				A0896CE92B1CA18600A6AFC7 /* Settings */,
 				A08644FC2AEE83390059A578 /* MainAppView.swift */,
 				A0C828BC2B0BE37600EA1A10 /* MapView.swift */,
 				D1DE48D12B04133700F5C50F /* CountryScreenView.swift */,
@@ -467,6 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0896CEB2B1CEBC800A6AFC7 /* TabBarItemsPreferenceKey.swift in Sources */,
 				D173A98D2B188B4F000DBDCA /* IrelandMainView.swift in Sources */,
 				A08645242AEFFFD30059A578 /* AuthManager.swift in Sources */,
 				A08644FD2AEE83390059A578 /* MainAppView.swift in Sources */,
@@ -486,7 +504,7 @@
 				A08644C42AEE7E190059A578 /* AuthService.swift in Sources */,
 				D1DE48CC2B0412E700F5C50F /* NetworkManager.swift in Sources */,
 				A03922672AE5788B009B1020 /* TextFieldMainView.swift in Sources */,
-				D173A99A2B18D828000DBDCA /* TabBarItemModel.swift in Sources */,
+				D173A99A2B18D828000DBDCA /* TabBarItem.swift in Sources */,
 				D173A9942B18D761000DBDCA /* SettingsViewModel.swift in Sources */,
 				D1DE48CA2B0412C500F5C50F /* GermanyMainView.swift in Sources */,
 				A08644FF2AEE874A0059A578 /* SecureFieldMainView.swift in Sources */,
@@ -496,7 +514,7 @@
 				A08645212AEFFD160059A578 /* User.swift in Sources */,
 				A039225F2AE5772D009B1020 /* EnterBtn.swift in Sources */,
 				A039226B2AE57E2C009B1020 /* TextRegisterView.swift in Sources */,
-				D173A9982B18D7DC000DBDCA /* GoogleSignInrResultModel.swift in Sources */,
+				D173A9982B18D7DC000DBDCA /* GoogleSignInHelper.swift in Sources */,
 				A0C828C12B0BF16A00EA1A10 /* CustomTabBarContainerView.swift in Sources */,
 				D173A9962B18D79B000DBDCA /* SignUpEmailInViewModel.swift in Sources */,
 				A0C828BF2B0BE61800EA1A10 /* CustomTabBarView.swift in Sources */,
@@ -508,10 +526,12 @@
 				D1DE48D02B04131100F5C50F /* CountryModel.swift in Sources */,
 				D173A98F2B188E69000DBDCA /* PortugalMainView.swift in Sources */,
 				D173A9912B1890BF000DBDCA /* BrazilMainView.swift in Sources */,
+				A0896CE82B1CA16100A6AFC7 /* EmailSectionView.swift in Sources */,
 				A03922512AE56AF4009B1020 /* Travel_RadarApp.swift in Sources */,
 				D1DE48CE2B0412FA00F5C50F /* CoError.swift in Sources */,
 				D1DE48C62B04129500F5C50F /* UKMainView.swift in Sources */,
 				A039226D2AE58AFE009B1020 /* AppleRegisterBtn.swift in Sources */,
+				A0896CED2B1D07DA00A6AFC7 /* SettingsLogOutBtn.swift in Sources */,
 				D18EF6222B04CA0800E6C4AF /* NetworkCallModel.swift in Sources */,
 				A08645192AEEA3A60059A578 /* SettingsView.swift in Sources */,
 			);
@@ -647,6 +667,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Travel Radar/Preview Content\"";
+				DEVELOPMENT_TEAM = M92RYCWGSY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Travel-Radar-Info.plist";

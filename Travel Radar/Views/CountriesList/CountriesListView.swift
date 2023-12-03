@@ -51,7 +51,7 @@ struct CountriesListView: View {
                 } label:{
                     CountriesListBtnView(flagName: "BrazilFlag", nameOfCountry: "Бразилия")
                 }
-            }
+            }.padding(.top,50)
         }
         //.navigationTitle("Список стран")
         .listStyle(.grouped)

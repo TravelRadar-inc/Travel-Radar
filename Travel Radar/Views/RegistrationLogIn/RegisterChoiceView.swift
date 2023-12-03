@@ -7,15 +7,8 @@ import FirebaseAuth
 @MainActor
 class AuthGoogleViewModel: ObservableObject{
     func singInGoogle() async throws{
-        guard let topVC = Utilities.shared.topViewController() else{
-            throw URLError(.cannotFindHost)
-        }
-        let gidSignInResult = try await GIDSignIn.sharedInstance.signIn(withPresenting: topVC)
-        guard let idToken = gidSignInResult.user.idToken?.tokenString else{
-            throw URLError(.badServerResponse)
-        }
-        let accessToken = gidSignInResult.user.accessToken.tokenString
-        let tokens = GoogleSignInrResultModel(idToken: idToken, accessToken: accessToken)
+        let helper = SignInGoogleHelper()
+        let tokens = try await helper.signIn()
         try await AuthService.shared.signInWithGoogle(tokens: tokens)
     }
 }
@@ -45,7 +38,7 @@ struct RegisterChoiceView: View {
                     ButtonRegisterImageView(imageName: "icons8-apple",
                                        text: "Войти с помощью Apple   ")
                 })
-                GoogleSignInButton(viewModel: GoogleSignInButtonViewModel(scheme: .light, style: .wide, state: .normal)) {
+                Button(action: {
                     Task{
                         do{
                             try await viewModel.singInGoogle()
@@ -56,10 +49,24 @@ struct RegisterChoiceView: View {
                             self.isShowAlert.toggle()
                         }
                     }
-                }
-                .cornerRadius(20)
-                .frame(width: 300)
-                .padding(.horizontal, 40)
+                }, label: {
+                    ButtonRegisterImageView(imageName:"icons8-google",text: "Войти с помощью Google")
+                })
+//                GoogleSignInButton(viewModel: GoogleSignInButtonViewModel(scheme: .light, style: .wide, state: .normal)) {
+//                    Task{
+//                        do{
+//                            try await viewModel.singInGoogle()
+//                            isShowMapView.toggle()
+//                        }
+//                        catch{
+//                            alertMessage = "Ошибка регистрации \(error.localizedDescription)"
+//                            self.isShowAlert.toggle()
+//                        }
+//                    }
+//                }я
+//                .cornerRadius(20)
+//                .frame(width: 300)
+//                .padding(.horizontal, 40)
                 Spacer()
                 Button(action: {
                     isShowingContentView.toggle()

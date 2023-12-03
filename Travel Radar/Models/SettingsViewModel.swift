@@ -3,7 +3,8 @@ import Foundation
 class SettingsViewModel: ObservableObject{
     @Published var authProviders: [AuthProviderOption] = []
     func loadAuthProviders(){
-        if let authProviders = try? AuthService.shared.getProviders(){
+        if let providers = try? AuthService.shared.getProviders(){
+            authProviders = providers
         }
     }
     func signOut() throws{
