@@ -1,57 +1,18 @@
 import SwiftUI
 
 struct CountriesListView: View {
+    @StateObject var viewModel = MapViewModelView()
     var body: some View {
         NavigationStack{
             List{
-                NavigationLink{
-                    UKMainView()
-                } label:{
-                    CountriesListBtnView(flagName: "FixedUkFlag", nameOfCountry: "Великобритания")
+                ForEach(0..<8) { index in
+                    NavigationLink {
+                        AnyView(viewModel.countryView[viewModel.numberCounry[index]!]!)
+                    } label: {
+                        CountriesListBtnView(flagName: viewModel.flagCountry[viewModel.numberCounry[index]!]!, nameOfCountry: viewModel.countryRusNames[index])
+                    }
                 }
-                
-                NavigationLink{
-                    FranceMainView()
-                } label:{
-                    CountriesListBtnView(flagName: "FranceFlag", nameOfCountry: "Франция")
-                }
-                
-                NavigationLink{
-                    GermanyMainView()
-                } label:{
-                    CountriesListBtnView(flagName: "GermanyFlag", nameOfCountry: "Германия")
-                }
-                
-                NavigationLink{
-                    IrelandMainView()
-                } label:{
-                    CountriesListBtnView(flagName: "IrelandFlag", nameOfCountry: "Ирландия")
-                }
-                
-                NavigationLink{
-                    UsaMainView()
-                } label:{
-                    CountriesListBtnView(flagName: "UsFlag", nameOfCountry: "США")
-                }
-                
-                NavigationLink{
-                    SpainMainView()
-                } label:{
-                    CountriesListBtnView(flagName: "SpainFlag", nameOfCountry: "Испания")
-                }
-                
-                NavigationLink{
-                    PortugalMainView()
-                } label:{
-                    CountriesListBtnView(flagName: "PortugalFlag", nameOfCountry: "Португалия")
-                }
-                
-                NavigationLink{
-                    BrazilMainView()
-                } label:{
-                    CountriesListBtnView(flagName: "BrazilFlag", nameOfCountry: "Бразилия")
-                }
-            }.padding(.top,50)
+            }
         }
         //.navigationTitle("Список стран")
         .listStyle(.grouped)
