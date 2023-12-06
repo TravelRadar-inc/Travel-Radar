@@ -69,6 +69,8 @@
 		A0C828BD2B0BE37600EA1A10 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828BC2B0BE37600EA1A10 /* MapView.swift */; };
 		A0C828BF2B0BE61800EA1A10 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828BE2B0BE61800EA1A10 /* CustomTabBarView.swift */; };
 		A0C828C12B0BF16A00EA1A10 /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828C02B0BF16A00EA1A10 /* CustomTabBarContainerView.swift */; };
+		D10BDF1C2B20B5400066BE62 /* UAEMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10BDF1B2B20B5400066BE62 /* UAEMainView.swift */; };
+		D10BDF1E2B20B82D0066BE62 /* TurkeyMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10BDF1D2B20B82D0066BE62 /* TurkeyMainView.swift */; };
 		D13DC7F92B125B9B006B2CAE /* CountryInfoBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13DC7F82B125B9B006B2CAE /* CountryInfoBtn.swift */; };
 		D14489802B08A71000D94E68 /* SpainMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D144897F2B08A71000D94E68 /* SpainMainView.swift */; };
 		D173A98B2B1886F4000DBDCA /* FranceMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173A98A2B1886F4000DBDCA /* FranceMainView.swift */; };
@@ -127,6 +129,8 @@
 		A0C828BC2B0BE37600EA1A10 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A0C828BE2B0BE61800EA1A10 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		A0C828C02B0BF16A00EA1A10 /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
+		D10BDF1B2B20B5400066BE62 /* UAEMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UAEMainView.swift; sourceTree = "<group>"; };
+		D10BDF1D2B20B82D0066BE62 /* TurkeyMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurkeyMainView.swift; sourceTree = "<group>"; };
 		D13DC7F82B125B9B006B2CAE /* CountryInfoBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfoBtn.swift; sourceTree = "<group>"; };
 		D144897F2B08A71000D94E68 /* SpainMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpainMainView.swift; sourceTree = "<group>"; };
 		D173A98A2B1886F4000DBDCA /* FranceMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FranceMainView.swift; sourceTree = "<group>"; };
@@ -232,6 +236,7 @@
 		A03922602AE5777D009B1020 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A0896CE92B1CA18600A6AFC7 /* Settings */,
 				D173A9A22B18E210000DBDCA /* RegistrationLogIn */,
 				D173A9A12B18E1DB000DBDCA /* Main */,
 				D173A9A02B18E1B1000DBDCA /* TabBar */,
@@ -267,6 +272,8 @@
 				D173A98C2B188B4F000DBDCA /* IrelandMainView.swift */,
 				D173A98E2B188E69000DBDCA /* PortugalMainView.swift */,
 				D173A9902B1890BF000DBDCA /* BrazilMainView.swift */,
+				D10BDF1B2B20B5400066BE62 /* UAEMainView.swift */,
+				D10BDF1D2B20B82D0066BE62 /* TurkeyMainView.swift */,
 			);
 			path = Countries;
 			sourceTree = "<group>";
@@ -358,7 +365,6 @@
 		D173A9A12B18E1DB000DBDCA /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				A0896CE92B1CA18600A6AFC7 /* Settings */,
 				A08644FC2AEE83390059A578 /* MainAppView.swift */,
 				A0C828BC2B0BE37600EA1A10 /* MapView.swift */,
 				D1DE48D12B04133700F5C50F /* CountryScreenView.swift */,
@@ -491,6 +497,7 @@
 				A03922732AE58F04009B1020 /* MiniBtn.swift in Sources */,
 				A03922632AE577B9009B1020 /* BackgroundMainView.swift in Sources */,
 				D13DC7F92B125B9B006B2CAE /* CountryInfoBtn.swift in Sources */,
+				D10BDF1C2B20B5400066BE62 /* UAEMainView.swift in Sources */,
 				D1DE48C42B04126700F5C50F /* CountriesListBtnView.swift in Sources */,
 				A051D48D2AF678E000C46391 /* Utilities.swift in Sources */,
 				A086451B2AEEA4150059A578 /* SettingsText.swift in Sources */,
@@ -514,6 +521,7 @@
 				A08645212AEFFD160059A578 /* User.swift in Sources */,
 				A039225F2AE5772D009B1020 /* EnterBtn.swift in Sources */,
 				A039226B2AE57E2C009B1020 /* TextRegisterView.swift in Sources */,
+				D10BDF1E2B20B82D0066BE62 /* TurkeyMainView.swift in Sources */,
 				D173A9982B18D7DC000DBDCA /* GoogleSignInHelper.swift in Sources */,
 				A0C828C12B0BF16A00EA1A10 /* CustomTabBarContainerView.swift in Sources */,
 				D173A9962B18D79B000DBDCA /* SignUpEmailInViewModel.swift in Sources */,

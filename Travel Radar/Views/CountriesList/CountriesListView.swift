@@ -5,7 +5,7 @@ struct CountriesListView: View {
     var body: some View {
         NavigationStack{
             List{
-                ForEach(0..<8) { index in
+                ForEach(0..<10) { index in
                     NavigationLink {
                         AnyView(viewModel.countryView[viewModel.numberCounry[index]!]!)
                     } label: {
