@@ -19,7 +19,7 @@ struct SettingsView: View {
                 if viewModel.authProviders.contains(.email){
                     EmailSection(isShowAlert: $isShowAlert, alertMessage: $alertMessage)
                 }
-                
+                /*
                 Button("Выбрать стиль карты") {
                     withAnimation{
                         isShowingStylePicker.toggle()
@@ -75,7 +75,7 @@ struct SettingsView: View {
                             .padding(5)
                     }
                 }
-                
+                */
                 LogOut(isShowContentView: $isShowContentView, isShowAlert: $isShowAlert, alertMessage: $alertMessage)
                     .alert(alertMessage, isPresented: $isShowAlert) {
                         Button{} label: {

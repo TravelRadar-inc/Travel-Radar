@@ -20,7 +20,7 @@ struct SpainMainView: View {
                 Alert(title: alertItem.title,
                       message: alertItem.message,
                       dismissButton: alertItem.dismissButton)
-        }
+            }
         }
     }
     
