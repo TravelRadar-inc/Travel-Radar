@@ -22,6 +22,8 @@
 		A039226F2AE58D94009B1020 /* RegisterBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039226E2AE58D94009B1020 /* RegisterBtn.swift */; };
 		A03922712AE58E4B009B1020 /* RegisterWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922702AE58E4B009B1020 /* RegisterWindowView.swift */; };
 		A03922732AE58F04009B1020 /* MiniBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922722AE58F04009B1020 /* MiniBtn.swift */; };
+		A049FED92B386FC500558790 /* AppleSignInHepler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FED82B386FC500558790 /* AppleSignInHepler.swift */; };
+		A049FEDC2B38A12400558790 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = A049FEDB2B38A12400558790 /* SwiftSoup */; };
 		A051D4832AF65A3D00C46391 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = A051D4822AF65A3D00C46391 /* GoogleSignIn */; };
 		A051D4852AF65A3D00C46391 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A051D4842AF65A3D00C46391 /* GoogleSignInSwift */; };
 		A051D4882AF65E1400C46391 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A051D4872AF65E1400C46391 /* GoogleService-Info.plist */; };
@@ -110,6 +112,8 @@
 		A039226E2AE58D94009B1020 /* RegisterBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBtn.swift; sourceTree = "<group>"; };
 		A03922702AE58E4B009B1020 /* RegisterWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWindowView.swift; sourceTree = "<group>"; };
 		A03922722AE58F04009B1020 /* MiniBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniBtn.swift; sourceTree = "<group>"; };
+		A049FED72B386CE400558790 /* Travel Radar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Travel Radar.entitlements"; sourceTree = "<group>"; };
+		A049FED82B386FC500558790 /* AppleSignInHepler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInHepler.swift; sourceTree = "<group>"; };
 		A051D4862AF65A9B00C46391 /* Travel-Radar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Travel-Radar-Info.plist"; sourceTree = SOURCE_ROOT; };
 		A051D4872AF65E1400C46391 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A051D4892AF6775A00C46391 /* AuthGoogleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthGoogleViewModel.swift; sourceTree = "<group>"; };
@@ -187,6 +191,7 @@
 				A08644E12AEE7F680059A578 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				A08644F12AEE7F680059A578 /* FirebaseMessaging in Frameworks */,
 				A08644ED2AEE7F680059A578 /* FirebaseInstallations in Frameworks */,
+				A049FEDC2B38A12400558790 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +217,7 @@
 		A039224F2AE56AF4009B1020 /* Travel Radar */ = {
 			isa = PBXGroup;
 			children = (
+				A049FED72B386CE400558790 /* Travel Radar.entitlements */,
 				A051D4862AF65A9B00C46391 /* Travel-Radar-Info.plist */,
 				A03922502AE56AF4009B1020 /* Travel_RadarApp.swift */,
 				A03922602AE5777D009B1020 /* Views */,
@@ -293,6 +299,8 @@
 				A051D48C2AF678E000C46391 /* Utilities.swift */,
 				A08645232AEFFFD30059A578 /* AuthManager.swift */,
 				A08644C32AEE7E190059A578 /* AuthService.swift */,
+				D173A9972B18D7DC000DBDCA /* GoogleSignInHelper.swift */,
+				A049FED82B386FC500558790 /* AppleSignInHepler.swift */,
 				A08645202AEFFD160059A578 /* User.swift */,
 				A051D4892AF6775A00C46391 /* AuthGoogleViewModel.swift */,
 				A051D4872AF65E1400C46391 /* GoogleService-Info.plist */,
@@ -337,7 +345,6 @@
 			children = (
 				D173A9932B18D761000DBDCA /* SettingsViewModel.swift */,
 				D173A9952B18D79B000DBDCA /* SignUpEmailInViewModel.swift */,
-				D173A9972B18D7DC000DBDCA /* GoogleSignInHelper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -430,6 +437,7 @@
 				A08644FA2AEE7F680059A578 /* FirebaseStorageCombine-Community */,
 				A051D4822AF65A3D00C46391 /* GoogleSignIn */,
 				A051D4842AF65A3D00C46391 /* GoogleSignInSwift */,
+				A049FEDB2B38A12400558790 /* SwiftSoup */,
 			);
 			productName = "Travel Radar";
 			productReference = A039224D2AE56AF4009B1020 /* Travel Radar.app */;
@@ -462,6 +470,7 @@
 			packageReferences = (
 				A08644C52AEE7F680059A578 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				A051D4812AF65A3D00C46391 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				A049FEDA2B38A12400558790 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 			);
 			productRefGroup = A039224E2AE56AF4009B1020 /* Products */;
 			projectDirPath = "";
@@ -517,6 +526,7 @@
 				A08644FF2AEE874A0059A578 /* SecureFieldMainView.swift in Sources */,
 				A08645152AEEA36A0059A578 /* CountryBtn.swift in Sources */,
 				A03922712AE58E4B009B1020 /* RegisterWindowView.swift in Sources */,
+				A049FED92B386FC500558790 /* AppleSignInHepler.swift in Sources */,
 				D18EF6242B04FA0300E6C4AF /* Alert.swift in Sources */,
 				A08645212AEFFD160059A578 /* User.swift in Sources */,
 				A039225F2AE5772D009B1020 /* EnterBtn.swift in Sources */,
@@ -672,10 +682,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Travel Radar/Travel Radar.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Travel Radar/Preview Content\"";
-				DEVELOPMENT_TEAM = M92RYCWGSY;
+				DEVELOPMENT_TEAM = P2SR32GZP6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Travel-Radar-Info.plist";
@@ -704,10 +715,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Travel Radar/Travel Radar.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Travel Radar/Preview Content\"";
-				DEVELOPMENT_TEAM = M92RYCWGSY;
+				DEVELOPMENT_TEAM = P2SR32GZP6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Travel-Radar-Info.plist";
@@ -755,6 +767,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A049FEDA2B38A12400558790 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.1;
+			};
+		};
 		A051D4812AF65A3D00C46391 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
@@ -774,6 +794,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A049FEDB2B38A12400558790 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A049FEDA2B38A12400558790 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
 		A051D4822AF65A3D00C46391 /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A051D4812AF65A3D00C46391 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;

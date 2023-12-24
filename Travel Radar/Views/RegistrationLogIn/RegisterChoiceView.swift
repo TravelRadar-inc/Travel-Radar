@@ -5,15 +5,26 @@ import GoogleSignInSwift
 import FirebaseAuth
 
 @MainActor
-class AuthGoogleViewModel: ObservableObject{
+final class AuthenticationViewModel: ObservableObject{
+    
+    private var currentNonce: String?
+    @Published var didSingInWithApple: Bool = false
+    let signInAppleHelper = SignInAppleHelper()
+    
     func singInGoogle() async throws{
         let helper = SignInGoogleHelper()
         let tokens = try await helper.signIn()
         try await AuthService.shared.signInWithGoogle(tokens: tokens)
     }
+    func singInApple() async throws{
+        let helper = SignInAppleHelper()
+        let tokens = try await helper.startSignInWithAppleFlow()
+        try await AuthService.shared.signInWithApple(tokens: tokens)
+    }
 }
+
 struct RegisterChoiceView: View {
-    @StateObject var viewModel = AuthGoogleViewModel()
+    @StateObject var viewModel = AuthenticationViewModel()
     @State var isShowingRegister2View = false
     @State var isShowingContentView = false
     @State var isShowMapView = false
@@ -33,11 +44,26 @@ struct RegisterChoiceView: View {
                     ButtonRegisterView()
                 })
                 Button(action: {
-                    
-                }, label: {
-                    ButtonRegisterImageView(imageName: "icons8-apple",
-                                       text: "Войти с помощью Apple   ")
+                    Task{
+                        do{
+                            try await viewModel.singInApple()
+                        }
+                        catch{
+                            alertMessage = "Ошибка регистрации \(error.localizedDescription)"
+                            self.isShowAlert.toggle()
+                        }
+                    }
+                },label: {SignInWithAppleButtonViewRepresentable(type: .default, style: .black)
+                        .allowsHitTesting(false)
                 })
+                .frame(width: 300, height: 55)
+
+//                Button(action: {
+//                    
+//                }, label: {
+//                    ButtonRegisterImageView(imageName: "icons8-apple",
+//                                       text: "Войти с помощью Apple   ")
+//                })
                 Button(action: {
                     Task{
                         do{
@@ -52,21 +78,6 @@ struct RegisterChoiceView: View {
                 }, label: {
                     ButtonRegisterImageView(imageName:"icons8-google",text: "Войти с помощью Google")
                 })
-//                GoogleSignInButton(viewModel: GoogleSignInButtonViewModel(scheme: .light, style: .wide, state: .normal)) {
-//                    Task{
-//                        do{
-//                            try await viewModel.singInGoogle()
-//                            isShowMapView.toggle()
-//                        }
-//                        catch{
-//                            alertMessage = "Ошибка регистрации \(error.localizedDescription)"
-//                            self.isShowAlert.toggle()
-//                        }
-//                    }
-//                }я
-//                .cornerRadius(20)
-//                .frame(width: 300)
-//                .padding(.horizontal, 40)
                 Spacer()
                 Button(action: {
                     isShowingContentView.toggle()
