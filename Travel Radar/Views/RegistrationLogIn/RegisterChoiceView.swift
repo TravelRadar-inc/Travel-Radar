@@ -5,78 +5,40 @@ import GoogleSignInSwift
 import FirebaseAuth
 
 @MainActor
-final class AuthenticationViewModel: ObservableObject{
-    
-    private var currentNonce: String?
-    @Published var didSingInWithApple: Bool = false
-    let signInAppleHelper = SignInAppleHelper()
-    
-    func singInGoogle() async throws{
-        let helper = SignInGoogleHelper()
-        let tokens = try await helper.signIn()
-        try await AuthService.shared.signInWithGoogle(tokens: tokens)
-    }
-    func singInApple() async throws{
-        let helper = SignInAppleHelper()
-        let tokens = try await helper.startSignInWithAppleFlow()
-        try await AuthService.shared.signInWithApple(tokens: tokens)
-    }
-}
-
 struct RegisterChoiceView: View {
-    @StateObject var viewModel = AuthenticationViewModel()
-    @State var isShowingRegister2View = false
     @State var isShowingContentView = false
-    @State var isShowMapView = false
+    @StateObject private var viewModel = SignUpEmailInViewModel()
+    @State var confirmPassword = ""
     @State var isShowAlert = false
     @State var alertMessage = ""
     var body: some View {
         ZStack{
-            BackgroundMain()
             VStack{
                 TextRedisterView(text: "Хотите легко путешествовать?")
+                    .padding(.top,10)
                 TextRedisterView(text: "Присоединяйтесь к нам")
                     .padding(.bottom, 300)
                 Spacer()
+                TextFieldMain(World: $viewModel.email, placeholder: "Введите Email")
+                PasswordFieldView(World: $viewModel.password, placeholder: "Введите пароль")
+                PasswordFieldView(World: $confirmPassword, placeholder: "Повторите пароль")
                 Button(action: {
-                    isShowingRegister2View.toggle()
-                }, label: {
-                    ButtonRegisterView()
-                })
-                Button(action: {
-                    Task{
-                        do{
-                            try await viewModel.singInApple()
-                        }
-                        catch{
-                            alertMessage = "Ошибка регистрации \(error.localizedDescription)"
-                            self.isShowAlert.toggle()
-                        }
+                    guard viewModel.password == confirmPassword else{
+                        self.alertMessage = "Пароли не совпадают!"
+                        self.isShowAlert.toggle()
+                        return
                     }
-                },label: {SignInWithAppleButtonViewRepresentable(type: .default, style: .black)
-                        .allowsHitTesting(false)
-                })
-                .frame(width: 300, height: 55)
-
-//                Button(action: {
-//                    
-//                }, label: {
-//                    ButtonRegisterImageView(imageName: "icons8-apple",
-//                                       text: "Войти с помощью Apple   ")
-//                })
-                Button(action: {
                     Task{
-                        do{
-                            try await viewModel.singInGoogle()
-                            isShowMapView.toggle()
-                        }
-                        catch{
+                        do {_ = try await AuthService.shared.createUser(email: viewModel.email, password: viewModel.password)
+                            isShowingContentView.toggle()
+                        } catch{
                             alertMessage = "Ошибка регистрации \(error.localizedDescription)"
                             self.isShowAlert.toggle()
                         }
                     }
                 }, label: {
-                    ButtonRegisterImageView(imageName:"icons8-google",text: "Войти с помощью Google")
+                    ButtonEnter(text:"Зарегестрироваться", color: Color(.white))
+                        .padding(.bottom,20)
                 })
                 Spacer()
                 Button(action: {
@@ -84,21 +46,16 @@ struct RegisterChoiceView: View {
                 }, label: {
                     ButtonMini(text: "Уже есть аккаунт?")
                 })
-            }.fullScreenCover(isPresented: $isShowingRegister2View, content: {
-                RegisterWindowView()})
-            .fullScreenCover(isPresented: $isShowingContentView, content: {
-               LogInView()})
-            .fullScreenCover(isPresented: $isShowMapView, content: {
-                MainAppView()
-            .alert(alertMessage, isPresented: $isShowAlert) {
-                Button{} label: {
+                .fullScreenCover(isPresented: $isShowingContentView, content: {
+                    LogInView()})
+                .alert(alertMessage, isPresented: $isShowAlert) {
+                    Button{} label: {
+                    }
                 }
             }
-            })
         }
     }
 }
-
 #Preview {
     RegisterChoiceView()
 }

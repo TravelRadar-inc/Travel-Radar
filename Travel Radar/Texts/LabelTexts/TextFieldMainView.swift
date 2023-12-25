@@ -8,7 +8,8 @@ struct TextFieldMain: View {
             .frame(width: 300)
             .background(Color.white)
             .cornerRadius(10)
-            .padding(.bottom)
+//            .padding(.bottom)
+            .overlay(RoundedRectangle(cornerRadius: 5) .stroke(.black, lineWidth: 0.5))
     }
 }
 

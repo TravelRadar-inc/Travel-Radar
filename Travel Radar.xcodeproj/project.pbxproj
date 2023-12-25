@@ -20,7 +20,6 @@
 		A039226B2AE57E2C009B1020 /* TextRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039226A2AE57E2C009B1020 /* TextRegisterView.swift */; };
 		A039226D2AE58AFE009B1020 /* AppleRegisterBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039226C2AE58AFE009B1020 /* AppleRegisterBtn.swift */; };
 		A039226F2AE58D94009B1020 /* RegisterBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039226E2AE58D94009B1020 /* RegisterBtn.swift */; };
-		A03922712AE58E4B009B1020 /* RegisterWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922702AE58E4B009B1020 /* RegisterWindowView.swift */; };
 		A03922732AE58F04009B1020 /* MiniBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922722AE58F04009B1020 /* MiniBtn.swift */; };
 		A049FED92B386FC500558790 /* AppleSignInHepler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FED82B386FC500558790 /* AppleSignInHepler.swift */; };
 		A049FEDC2B38A12400558790 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = A049FEDB2B38A12400558790 /* SwiftSoup */; };
@@ -110,7 +109,6 @@
 		A039226A2AE57E2C009B1020 /* TextRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRegisterView.swift; sourceTree = "<group>"; };
 		A039226C2AE58AFE009B1020 /* AppleRegisterBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleRegisterBtn.swift; sourceTree = "<group>"; };
 		A039226E2AE58D94009B1020 /* RegisterBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBtn.swift; sourceTree = "<group>"; };
-		A03922702AE58E4B009B1020 /* RegisterWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWindowView.swift; sourceTree = "<group>"; };
 		A03922722AE58F04009B1020 /* MiniBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniBtn.swift; sourceTree = "<group>"; };
 		A049FED72B386CE400558790 /* Travel Radar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Travel Radar.entitlements"; sourceTree = "<group>"; };
 		A049FED82B386FC500558790 /* AppleSignInHepler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInHepler.swift; sourceTree = "<group>"; };
@@ -385,7 +383,6 @@
 				A08644FE2AEE874A0059A578 /* SecureFieldMainView.swift */,
 				A03922622AE577B9009B1020 /* BackgroundMainView.swift */,
 				A03922682AE57981009B1020 /* RegisterChoiceView.swift */,
-				A03922702AE58E4B009B1020 /* RegisterWindowView.swift */,
 				A03922522AE56AF4009B1020 /* LogInView.swift */,
 			);
 			path = RegistrationLogIn;
@@ -525,7 +522,6 @@
 				D1DE48CA2B0412C500F5C50F /* GermanyMainView.swift in Sources */,
 				A08644FF2AEE874A0059A578 /* SecureFieldMainView.swift in Sources */,
 				A08645152AEEA36A0059A578 /* CountryBtn.swift in Sources */,
-				A03922712AE58E4B009B1020 /* RegisterWindowView.swift in Sources */,
 				A049FED92B386FC500558790 /* AppleSignInHepler.swift in Sources */,
 				D18EF6242B04FA0300E6C4AF /* Alert.swift in Sources */,
 				A08645212AEFFD160059A578 /* User.swift in Sources */,

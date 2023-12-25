@@ -6,6 +6,6 @@ struct TextMain: View {
         Text(text)
             .font(.system(size: 40, weight: .bold, design: .default))
             .cornerRadius(16)
-            .padding(.bottom, 400)
+            .padding(.bottom, 300)
     }
 }

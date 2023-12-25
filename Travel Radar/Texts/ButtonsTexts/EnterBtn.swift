@@ -7,8 +7,11 @@ struct ButtonEnter: View {
             .padding()
             .background(color)
             .cornerRadius(20)
-            .font(.system(size: 30))
+            .font(.system(size: 25))
             .foregroundColor(.black)
-            .padding(.bottom, 20)
+            .padding(.horizontal, 15)
+            .overlay(RoundedRectangle(cornerRadius: 10) .stroke(.black, lineWidth: 1))
+            .padding(.top, 20)
+
     }
 }
