@@ -23,6 +23,9 @@
 		A03922732AE58F04009B1020 /* MiniBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922722AE58F04009B1020 /* MiniBtn.swift */; };
 		A049FED92B386FC500558790 /* AppleSignInHepler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FED82B386FC500558790 /* AppleSignInHepler.swift */; };
 		A049FEDC2B38A12400558790 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = A049FEDB2B38A12400558790 /* SwiftSoup */; };
+		A049FEDE2B3AC89400558790 /* TestLogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FEDD2B3AC89400558790 /* TestLogInView.swift */; };
+		A049FEE02B3ACEF300558790 /* SignUpWithEmailBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FEDF2B3ACEF300558790 /* SignUpWithEmailBtn.swift */; };
+		A049FEE22B3ACF7700558790 /* LogInBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FEE12B3ACF7700558790 /* LogInBtn.swift */; };
 		A051D4832AF65A3D00C46391 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = A051D4822AF65A3D00C46391 /* GoogleSignIn */; };
 		A051D4852AF65A3D00C46391 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A051D4842AF65A3D00C46391 /* GoogleSignInSwift */; };
 		A051D4882AF65E1400C46391 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A051D4872AF65E1400C46391 /* GoogleService-Info.plist */; };
@@ -112,6 +115,9 @@
 		A03922722AE58F04009B1020 /* MiniBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniBtn.swift; sourceTree = "<group>"; };
 		A049FED72B386CE400558790 /* Travel Radar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Travel Radar.entitlements"; sourceTree = "<group>"; };
 		A049FED82B386FC500558790 /* AppleSignInHepler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInHepler.swift; sourceTree = "<group>"; };
+		A049FEDD2B3AC89400558790 /* TestLogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLogInView.swift; sourceTree = "<group>"; };
+		A049FEDF2B3ACEF300558790 /* SignUpWithEmailBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpWithEmailBtn.swift; sourceTree = "<group>"; };
+		A049FEE12B3ACF7700558790 /* LogInBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInBtn.swift; sourceTree = "<group>"; };
 		A051D4862AF65A9B00C46391 /* Travel-Radar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Travel-Radar-Info.plist"; sourceTree = SOURCE_ROOT; };
 		A051D4872AF65E1400C46391 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A051D4892AF6775A00C46391 /* AuthGoogleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthGoogleViewModel.swift; sourceTree = "<group>"; };
@@ -255,7 +261,9 @@
 			children = (
 				A0896CEC2B1D07DA00A6AFC7 /* SettingsLogOutBtn.swift */,
 				A08645162AEEA38F0059A578 /* SettingsBtn.swift */,
+				A049FEDF2B3ACEF300558790 /* SignUpWithEmailBtn.swift */,
 				A08645142AEEA36A0059A578 /* CountryBtn.swift */,
+				A049FEE12B3ACF7700558790 /* LogInBtn.swift */,
 				A039225E2AE5772D009B1020 /* EnterBtn.swift */,
 				A039226E2AE58D94009B1020 /* RegisterBtn.swift */,
 				A03922722AE58F04009B1020 /* MiniBtn.swift */,
@@ -381,6 +389,7 @@
 			isa = PBXGroup;
 			children = (
 				A08644FE2AEE874A0059A578 /* SecureFieldMainView.swift */,
+				A049FEDD2B3AC89400558790 /* TestLogInView.swift */,
 				A03922622AE577B9009B1020 /* BackgroundMainView.swift */,
 				A03922682AE57981009B1020 /* RegisterChoiceView.swift */,
 				A03922522AE56AF4009B1020 /* LogInView.swift */,
@@ -497,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0896CEB2B1CEBC800A6AFC7 /* TabBarItemsPreferenceKey.swift in Sources */,
+				A049FEE02B3ACEF300558790 /* SignUpWithEmailBtn.swift in Sources */,
 				D173A98D2B188B4F000DBDCA /* IrelandMainView.swift in Sources */,
 				A08645242AEFFFD30059A578 /* AuthManager.swift in Sources */,
 				A08644FD2AEE83390059A578 /* MainAppView.swift in Sources */,
@@ -511,6 +521,7 @@
 				A03922532AE56AF4009B1020 /* LogInView.swift in Sources */,
 				A03922652AE5780D009B1020 /* TextMainView.swift in Sources */,
 				D14489802B08A71000D94E68 /* SpainMainView.swift in Sources */,
+				A049FEE22B3ACF7700558790 /* LogInBtn.swift in Sources */,
 				A08645172AEEA38F0059A578 /* SettingsBtn.swift in Sources */,
 				A00B32272AFABCD200F4F605 /* CountriesListView.swift in Sources */,
 				A03922692AE57981009B1020 /* RegisterChoiceView.swift in Sources */,
@@ -536,6 +547,7 @@
 				D1DE48C82B0412AD00F5C50F /* UsaMainView.swift in Sources */,
 				D173A98B2B1886F4000DBDCA /* FranceMainView.swift in Sources */,
 				A0C828BD2B0BE37600EA1A10 /* MapView.swift in Sources */,
+				A049FEDE2B3AC89400558790 /* TestLogInView.swift in Sources */,
 				D1DE48D22B04133700F5C50F /* CountryScreenView.swift in Sources */,
 				D1DE48D02B04131100F5C50F /* CountryModel.swift in Sources */,
 				D173A98F2B188E69000DBDCA /* PortugalMainView.swift in Sources */,
