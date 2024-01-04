@@ -6,9 +6,11 @@ struct Travel_RadarApp: App {
     @UIApplicationDelegateAdaptor private var appDelegate: AppDelegate
     var body: some Scene {
         WindowGroup {
-//            if let user = AuthService.shared.currentUser{
+//            if let user = Auth.auth().currentUser{
 //                if user.uid == "mDMX2tTyvYfM8qtCRWdgaMaMa7l2" || user.uid == "Z9GVW4GMORPBPfQUOvX1UTarnl23"{
-//                    
+//                    AdminView()
+//                } else{
+//                    MainAppView()
 //                }
 //                
 //            }

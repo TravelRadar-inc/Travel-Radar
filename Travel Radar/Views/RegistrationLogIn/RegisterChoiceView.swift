@@ -6,7 +6,8 @@ import FirebaseAuth
 
 @MainActor
 struct RegisterChoiceView: View {
-    @State var isShowingContentView = false
+    @State var isShowingMainLogInView = false
+    @State var isShowingLogInView = false
     @StateObject private var viewModel = SignUpEmailInViewModel()
     @State var confirmPassword = ""
     @State var isShowAlert = false
@@ -30,7 +31,7 @@ struct RegisterChoiceView: View {
                     }
                     Task{
                         do {_ = try await AuthService.shared.createUser(email: viewModel.email, password: viewModel.password)
-                            isShowingContentView.toggle()
+                            isShowingLogInView.toggle()
                         } catch{
                             alertMessage = "Ошибка регистрации \(error.localizedDescription)"
                             self.isShowAlert.toggle()
@@ -42,16 +43,19 @@ struct RegisterChoiceView: View {
                 })
                 Spacer()
                 Button(action: {
-                    isShowingContentView.toggle()
+                    isShowingMainLogInView.toggle()
                 }, label: {
                     ButtonMini(text: "Уже есть аккаунт?")
                 })
-                .fullScreenCover(isPresented: $isShowingContentView, content: {
-                    LogInView()})
+                .fullScreenCover(isPresented: $isShowingMainLogInView, content: {
+                    MainLogInView()})
                 .alert(alertMessage, isPresented: $isShowAlert) {
                     Button{} label: {
                     }
                 }
+                .fullScreenCover(isPresented: $isShowingLogInView, content: {
+                    LogInView()
+                })
             }
         }
     }

@@ -17,12 +17,14 @@ class SettingsViewModel: ObservableObject{
         }
         try await AuthService.shared.resetPassword(email: email)
     }
-    func updateEmail() async throws{
-        let email = "test2@test.ru"
+    func updateEmail(email: String) async throws{
         try await AuthService.shared.updateEmail(email: email)
     }
-    func updatePassword() async throws{
-        let password = "hello123"
+    func updatePassword(password: String) async throws{
         try await AuthService.shared.updatePassword(password: password)
+    }
+    
+    func deleteAccount() async throws{
+        try await AuthService.shared.delete()
     }
 }

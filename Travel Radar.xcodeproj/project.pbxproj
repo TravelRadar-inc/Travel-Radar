@@ -23,9 +23,15 @@
 		A03922732AE58F04009B1020 /* MiniBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922722AE58F04009B1020 /* MiniBtn.swift */; };
 		A049FED92B386FC500558790 /* AppleSignInHepler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FED82B386FC500558790 /* AppleSignInHepler.swift */; };
 		A049FEDC2B38A12400558790 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = A049FEDB2B38A12400558790 /* SwiftSoup */; };
-		A049FEDE2B3AC89400558790 /* TestLogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FEDD2B3AC89400558790 /* TestLogInView.swift */; };
+		A049FEDE2B3AC89400558790 /* MainLogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FEDD2B3AC89400558790 /* MainLogInView.swift */; };
 		A049FEE02B3ACEF300558790 /* SignUpWithEmailBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FEDF2B3ACEF300558790 /* SignUpWithEmailBtn.swift */; };
 		A049FEE22B3ACF7700558790 /* LogInBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FEE12B3ACF7700558790 /* LogInBtn.swift */; };
+		A049FEE42B4315C600558790 /* SettingsDeleteAccountBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FEE32B4315C600558790 /* SettingsDeleteAccountBtn.swift */; };
+		A049FEE82B431D6100558790 /* UpdatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FEE72B431D6100558790 /* UpdatePasswordView.swift */; };
+		A049FEEA2B431D7000558790 /* UpdateEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FEE92B431D7000558790 /* UpdateEmailView.swift */; };
+		A049FEEE2B46B8CA00558790 /* AdminViewForAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FEED2B46B8CA00558790 /* AdminViewForAdmin.swift */; };
+		A049FEF02B46BCE700558790 /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FEEF2B46BCE700558790 /* AdminView.swift */; };
+		A049FEF22B46BE0D00558790 /* MainAdminViewForAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FEF12B46BE0D00558790 /* MainAdminViewForAdmin.swift */; };
 		A051D4832AF65A3D00C46391 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = A051D4822AF65A3D00C46391 /* GoogleSignIn */; };
 		A051D4852AF65A3D00C46391 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A051D4842AF65A3D00C46391 /* GoogleSignInSwift */; };
 		A051D4882AF65E1400C46391 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A051D4872AF65E1400C46391 /* GoogleService-Info.plist */; };
@@ -115,9 +121,15 @@
 		A03922722AE58F04009B1020 /* MiniBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniBtn.swift; sourceTree = "<group>"; };
 		A049FED72B386CE400558790 /* Travel Radar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Travel Radar.entitlements"; sourceTree = "<group>"; };
 		A049FED82B386FC500558790 /* AppleSignInHepler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInHepler.swift; sourceTree = "<group>"; };
-		A049FEDD2B3AC89400558790 /* TestLogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLogInView.swift; sourceTree = "<group>"; };
+		A049FEDD2B3AC89400558790 /* MainLogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLogInView.swift; sourceTree = "<group>"; };
 		A049FEDF2B3ACEF300558790 /* SignUpWithEmailBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpWithEmailBtn.swift; sourceTree = "<group>"; };
 		A049FEE12B3ACF7700558790 /* LogInBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInBtn.swift; sourceTree = "<group>"; };
+		A049FEE32B4315C600558790 /* SettingsDeleteAccountBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDeleteAccountBtn.swift; sourceTree = "<group>"; };
+		A049FEE72B431D6100558790 /* UpdatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordView.swift; sourceTree = "<group>"; };
+		A049FEE92B431D7000558790 /* UpdateEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateEmailView.swift; sourceTree = "<group>"; };
+		A049FEED2B46B8CA00558790 /* AdminViewForAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewForAdmin.swift; sourceTree = "<group>"; };
+		A049FEEF2B46BCE700558790 /* AdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
+		A049FEF12B46BE0D00558790 /* MainAdminViewForAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAdminViewForAdmin.swift; sourceTree = "<group>"; };
 		A051D4862AF65A9B00C46391 /* Travel-Radar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Travel-Radar-Info.plist"; sourceTree = SOURCE_ROOT; };
 		A051D4872AF65E1400C46391 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A051D4892AF6775A00C46391 /* AuthGoogleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthGoogleViewModel.swift; sourceTree = "<group>"; };
@@ -246,6 +258,7 @@
 		A03922602AE5777D009B1020 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A049FEEC2B46B8AF00558790 /* Admin */,
 				A0896CE92B1CA18600A6AFC7 /* Settings */,
 				D173A9A22B18E210000DBDCA /* RegistrationLogIn */,
 				D173A9A12B18E1DB000DBDCA /* Main */,
@@ -263,6 +276,7 @@
 				A08645162AEEA38F0059A578 /* SettingsBtn.swift */,
 				A049FEDF2B3ACEF300558790 /* SignUpWithEmailBtn.swift */,
 				A08645142AEEA36A0059A578 /* CountryBtn.swift */,
+				A049FEE32B4315C600558790 /* SettingsDeleteAccountBtn.swift */,
 				A049FEE12B3ACF7700558790 /* LogInBtn.swift */,
 				A039225E2AE5772D009B1020 /* EnterBtn.swift */,
 				A039226E2AE58D94009B1020 /* RegisterBtn.swift */,
@@ -271,6 +285,16 @@
 				D13DC7F82B125B9B006B2CAE /* CountryInfoBtn.swift */,
 			);
 			path = ButtonsTexts;
+			sourceTree = "<group>";
+		};
+		A049FEEC2B46B8AF00558790 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				A049FEED2B46B8CA00558790 /* AdminViewForAdmin.swift */,
+				A049FEF12B46BE0D00558790 /* MainAdminViewForAdmin.swift */,
+				A049FEEF2B46BCE700558790 /* AdminView.swift */,
+			);
+			path = Admin;
 			sourceTree = "<group>";
 		};
 		A08645052AEEA2F00059A578 /* Countries */ = {
@@ -318,6 +342,8 @@
 			isa = PBXGroup;
 			children = (
 				A0896CE72B1CA16100A6AFC7 /* EmailSectionView.swift */,
+				A049FEE72B431D6100558790 /* UpdatePasswordView.swift */,
+				A049FEE92B431D7000558790 /* UpdateEmailView.swift */,
 				A08645182AEEA3A60059A578 /* SettingsView.swift */,
 			);
 			path = Settings;
@@ -389,7 +415,7 @@
 			isa = PBXGroup;
 			children = (
 				A08644FE2AEE874A0059A578 /* SecureFieldMainView.swift */,
-				A049FEDD2B3AC89400558790 /* TestLogInView.swift */,
+				A049FEDD2B3AC89400558790 /* MainLogInView.swift */,
 				A03922622AE577B9009B1020 /* BackgroundMainView.swift */,
 				A03922682AE57981009B1020 /* RegisterChoiceView.swift */,
 				A03922522AE56AF4009B1020 /* LogInView.swift */,
@@ -511,6 +537,7 @@
 				A08645242AEFFFD30059A578 /* AuthManager.swift in Sources */,
 				A08644FD2AEE83390059A578 /* MainAppView.swift in Sources */,
 				A03922732AE58F04009B1020 /* MiniBtn.swift in Sources */,
+				A049FEE42B4315C600558790 /* SettingsDeleteAccountBtn.swift in Sources */,
 				A03922632AE577B9009B1020 /* BackgroundMainView.swift in Sources */,
 				D13DC7F92B125B9B006B2CAE /* CountryInfoBtn.swift in Sources */,
 				D10BDF1C2B20B5400066BE62 /* UAEMainView.swift in Sources */,
@@ -518,13 +545,17 @@
 				A051D48D2AF678E000C46391 /* Utilities.swift in Sources */,
 				A086451B2AEEA4150059A578 /* SettingsText.swift in Sources */,
 				A039226F2AE58D94009B1020 /* RegisterBtn.swift in Sources */,
+				A049FEF02B46BCE700558790 /* AdminView.swift in Sources */,
 				A03922532AE56AF4009B1020 /* LogInView.swift in Sources */,
 				A03922652AE5780D009B1020 /* TextMainView.swift in Sources */,
+				A049FEEA2B431D7000558790 /* UpdateEmailView.swift in Sources */,
 				D14489802B08A71000D94E68 /* SpainMainView.swift in Sources */,
 				A049FEE22B3ACF7700558790 /* LogInBtn.swift in Sources */,
 				A08645172AEEA38F0059A578 /* SettingsBtn.swift in Sources */,
 				A00B32272AFABCD200F4F605 /* CountriesListView.swift in Sources */,
+				A049FEF22B46BE0D00558790 /* MainAdminViewForAdmin.swift in Sources */,
 				A03922692AE57981009B1020 /* RegisterChoiceView.swift in Sources */,
+				A049FEEE2B46B8CA00558790 /* AdminViewForAdmin.swift in Sources */,
 				A08644C42AEE7E190059A578 /* AuthService.swift in Sources */,
 				D1DE48CC2B0412E700F5C50F /* NetworkManager.swift in Sources */,
 				A03922672AE5788B009B1020 /* TextFieldMainView.swift in Sources */,
@@ -547,8 +578,9 @@
 				D1DE48C82B0412AD00F5C50F /* UsaMainView.swift in Sources */,
 				D173A98B2B1886F4000DBDCA /* FranceMainView.swift in Sources */,
 				A0C828BD2B0BE37600EA1A10 /* MapView.swift in Sources */,
-				A049FEDE2B3AC89400558790 /* TestLogInView.swift in Sources */,
+				A049FEDE2B3AC89400558790 /* MainLogInView.swift in Sources */,
 				D1DE48D22B04133700F5C50F /* CountryScreenView.swift in Sources */,
+				A049FEE82B431D6100558790 /* UpdatePasswordView.swift in Sources */,
 				D1DE48D02B04131100F5C50F /* CountryModel.swift in Sources */,
 				D173A98F2B188E69000DBDCA /* PortugalMainView.swift in Sources */,
 				D173A9912B1890BF000DBDCA /* BrazilMainView.swift in Sources */,

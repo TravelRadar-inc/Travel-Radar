@@ -19,13 +19,41 @@ struct SettingsView: View {
                 if viewModel.authProviders.contains(.email){
                     EmailSection(isShowAlert: $isShowAlert, alertMessage: $alertMessage)
                 }
-                
+                Section{
+                    NavigationLink{
+                        AdminViewForAdmin()
+                    } label: {
+                        Text("Написать в тех поддержку")
+                    }
+                } header: {
+                    Text("Тех поддержка")
+                }
+                LogOut(isShowContentView: $isShowContentView, isShowAlert: $isShowAlert, alertMessage: $alertMessage)
+                DeleteAccount(isShowContentView: $isShowContentView, isShowAlert: $isShowAlert, alertMessage: $alertMessage)
+            }
+            .padding(.top,50)
+            
+        }.onAppear{
+            viewModel.loadAuthProviders()}
+        .fullScreenCover(isPresented: $isShowMap, content: {MainAppView()})
+        .fullScreenCover(isPresented: $isShowContentView, content: {MainLogInView()})
+    }
+}
+
+#Preview
+{
+    SettingsView()
+}
+
+
+
+
 //                Button("Выбрать стиль карты") {
 //                    withAnimation{
 //                        isShowingStylePicker.toggle()
 //                    }
 //                }
-//                
+//
 //                if isShowingStylePicker{
 //                    HStack{
 //                            Button(action: {
@@ -36,7 +64,7 @@ struct SettingsView: View {
 //                                VStack {
 //                                    Text("Стандартный")
 //                                        .foregroundColor(.black)
-//                                    
+//
 //                                    Image("StandardMapStyle")
 //                                        .resizable()
 //                                        .frame(width: 110, height: 60)
@@ -49,9 +77,9 @@ struct SettingsView: View {
 //                                )
 //                            })
 //                            .padding(5)
-//                            
+//
 //                        Spacer()
-//                        
+//
 //                            Button(action: {
 //                                styleOfMap = .hybrid
 //                                frame1color = .gray
@@ -60,7 +88,7 @@ struct SettingsView: View {
 //                                VStack {
 //                                    Text("Спутниковый")
 //                                        .foregroundColor(.black)
-//                                    
+//
 //                                    Image("SatelliteMapStyle")
 //                                        .resizable()
 //                                        .frame(width: 110, height: 60)
@@ -75,24 +103,3 @@ struct SettingsView: View {
 //                            .padding(5)
 //                    }
 //                }
-                
-                LogOut(isShowContentView: $isShowContentView, isShowAlert: $isShowAlert, alertMessage: $alertMessage)
-                    .alert(alertMessage, isPresented: $isShowAlert) {
-                        Button{} label: {
-                        }
-                    }
-            }
-            .padding(.top,50)
-            
-        }.onAppear{
-            viewModel.loadAuthProviders()}
-        //.navigationBarTitle("Настройки")
-        .fullScreenCover(isPresented: $isShowMap, content: {MainAppView()})
-        .fullScreenCover(isPresented: $isShowContentView, content: {LogInView()})
-    }
-}
-
-#Preview
-{
-    SettingsView()
-}

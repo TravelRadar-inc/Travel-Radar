@@ -94,5 +94,13 @@ class AuthService{
     func signOut()throws{
         try Auth.auth().signOut()
     }
+    
+    func delete() async throws{
+        guard let user = Auth.auth().currentUser else{
+            throw URLError(.badURL)
+        }
+        
+        try await user.delete()
+    }
 }
 
