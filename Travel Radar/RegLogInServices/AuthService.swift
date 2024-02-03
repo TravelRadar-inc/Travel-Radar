@@ -2,10 +2,14 @@ import Foundation
 import FirebaseAuth
 struct AuthDataResultModel{
     let uid: String
+    let name: String?
     let email: String?
+    let photoURL: String?
     init(user:User){
         self.uid = user.uid
         self.email = user.email
+        self.name = user.displayName
+        self.photoURL = user.photoURL?.absoluteString
     }
 }
 
@@ -20,6 +24,13 @@ enum AuthProviderOption: String{
 class AuthService{
     static let shared = AuthService()
     private init () {}
+    
+//    func getCurrentUser() -> AuthDataResultModel{
+//        guard let authUser = Auth.auth().currentUser else{
+//            
+//        }
+//        return AuthDataResultModel(user: authUser)
+//    }
     
     func getAuthUser() throws ->AuthDataResultModel{
         guard let user = Auth.auth().currentUser else{

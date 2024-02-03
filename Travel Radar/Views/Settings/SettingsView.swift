@@ -1,5 +1,6 @@
 import SwiftUI
 import MapKit
+import Firebase
 @MainActor
 
 struct SettingsView: View {
@@ -13,6 +14,7 @@ struct SettingsView: View {
     @State var styleOfMap: MapStyle = .standard
     @State var frame1color: Color = .blue
     @State var frame2color: Color = .black
+//    @State var mapType: MKMapType = .standard
     var body: some View {
         NavigationStack{
             List{
@@ -20,14 +22,62 @@ struct SettingsView: View {
                     EmailSection(isShowAlert: $isShowAlert, alertMessage: $alertMessage)
                 }
                 Section{
-                    NavigationLink{
-                        AdminViewForAdmin()
-                    } label: {
-                        Text("Написать в тех поддержку")
+                    HStack{
+                        Button(action: {
+                            styleOfMap = .standard
+                            frame1color = .blue
+                            frame2color = .gray
+                        }, label: {
+                            VStack {
+                                Text("Стандартный")
+                                    .foregroundColor(.black)
+                                
+                                Image("StandardMapStyle")
+                                    .resizable()
+                                    .frame(width: 110, height: 60)
+                                    .cornerRadius(10)
+                            }
+                            .padding(10)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(frame1color, lineWidth: 2)
+                            )
+                        })
+                        .padding(5)
+                        
+                        Spacer()
+                        
+                        Button(action: {
+                            styleOfMap = .hybrid
+                            frame1color = .gray
+                            frame2color = .blue
+                        }, label: {
+                            VStack {
+                                Text("Спутниковый")
+                                    .foregroundColor(.black)
+                                
+                                Image("SatelliteMapStyle")
+                                    .resizable()
+                                    .frame(width: 110, height: 60)
+                                    .cornerRadius(10)
+                            }
+                            .padding(10)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(frame2color, lineWidth: 2)
+                            )
+                        })
+                        .padding(5)
                     }
                 } header: {
-                    Text("Тех поддержка")
+                    Text("Стиль карты")
                 }
+                if let user = Auth.auth().currentUser{
+                    if user.uid != "mDMX2tTyvYfM8qtCRWdgaMaMa7l2" || user.uid != "Z9GVW4GMORPBPfQUOvX1UTarnl23"{
+                        TechnicalSupportView()
+                    }
+                }
+                
                 LogOut(isShowContentView: $isShowContentView, isShowAlert: $isShowAlert, alertMessage: $alertMessage)
                 DeleteAccount(isShowContentView: $isShowContentView, isShowAlert: $isShowAlert, alertMessage: $alertMessage)
             }
@@ -103,3 +153,4 @@ struct SettingsView: View {
 //                            .padding(5)
 //                    }
 //                }
+

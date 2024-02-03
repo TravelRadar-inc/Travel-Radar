@@ -46,7 +46,7 @@ struct MainAppView: View {
         .fullScreenCover(isPresented: $viewModel.isShowContentView, content: {MainLogInView()
         })
         .fullScreenCover(isPresented: $viewModel.isShowAdminView, content: {
-            AdminView()
+            MainAdminViewForAdmin()
         })
     }
 }

@@ -5,6 +5,7 @@ struct MapView: View {
     @StateObject var viewModel = MapViewModelView()
     @State var viewModelStyle = SettingsView()
     @Binding var styleForMap: MapStyle
+//    @Binding var mapType: MKMapType
     var body: some View {
         Map(position: $viewModel.camera){
             ForEach(0..<10){index in
