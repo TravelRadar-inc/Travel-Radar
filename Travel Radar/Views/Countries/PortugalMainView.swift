@@ -2,6 +2,7 @@ import SwiftUI
 
 struct PortugalMainView: View {
     @StateObject var ViewModel = NetworkCallModel()
+    @ObservedObject var discModel = CountriesDiscriptions()
     
     var body: some View {
         ZStack {
@@ -10,7 +11,7 @@ struct PortugalMainView: View {
             
             VStack {
                 ForEach (ViewModel.countries, id: \.id) {country in
-                    CountryScreenView(CountryImage1: "Portugal1", CountryImage2: "Portugal2", CountryImage3: "Portugal3", CountryImage4: "Portugal4", country: country)
+                    CountryScreenView(CountryImage1: "Portugal1", CountryImage2: "Portugal2", CountryImage3: "Portugal3", CountryImage4: "Portugal4", countryDiscription: discModel.PortugalDiscription, country: country)
                 }
             }
             .onAppear{

@@ -88,6 +88,7 @@
 		D10BDF1E2B20B82D0066BE62 /* TurkeyMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10BDF1D2B20B82D0066BE62 /* TurkeyMainView.swift */; };
 		D13DC7F92B125B9B006B2CAE /* CountryInfoBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13DC7F82B125B9B006B2CAE /* CountryInfoBtn.swift */; };
 		D14489802B08A71000D94E68 /* SpainMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D144897F2B08A71000D94E68 /* SpainMainView.swift */; };
+		D147A3B52B6F8D59005C90E3 /* CountriesDiscriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D147A3B42B6F8D59005C90E3 /* CountriesDiscriptions.swift */; };
 		D173A98B2B1886F4000DBDCA /* FranceMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173A98A2B1886F4000DBDCA /* FranceMainView.swift */; };
 		D173A98D2B188B4F000DBDCA /* IrelandMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173A98C2B188B4F000DBDCA /* IrelandMainView.swift */; };
 		D173A98F2B188E69000DBDCA /* PortugalMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173A98E2B188E69000DBDCA /* PortugalMainView.swift */; };
@@ -162,6 +163,7 @@
 		D10BDF1D2B20B82D0066BE62 /* TurkeyMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurkeyMainView.swift; sourceTree = "<group>"; };
 		D13DC7F82B125B9B006B2CAE /* CountryInfoBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfoBtn.swift; sourceTree = "<group>"; };
 		D144897F2B08A71000D94E68 /* SpainMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpainMainView.swift; sourceTree = "<group>"; };
+		D147A3B42B6F8D59005C90E3 /* CountriesDiscriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesDiscriptions.swift; sourceTree = "<group>"; };
 		D173A98A2B1886F4000DBDCA /* FranceMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FranceMainView.swift; sourceTree = "<group>"; };
 		D173A98C2B188B4F000DBDCA /* IrelandMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrelandMainView.swift; sourceTree = "<group>"; };
 		D173A98E2B188E69000DBDCA /* PortugalMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortugalMainView.swift; sourceTree = "<group>"; };
@@ -391,6 +393,7 @@
 			children = (
 				D173A9932B18D761000DBDCA /* SettingsViewModel.swift */,
 				D173A9952B18D79B000DBDCA /* SignUpEmailInViewModel.swift */,
+				D147A3B42B6F8D59005C90E3 /* CountriesDiscriptions.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -572,6 +575,7 @@
 				A049FEE22B3ACF7700558790 /* LogInBtn.swift in Sources */,
 				A08645172AEEA38F0059A578 /* SettingsBtn.swift in Sources */,
 				A00B32272AFABCD200F4F605 /* CountriesListView.swift in Sources */,
+				D147A3B52B6F8D59005C90E3 /* CountriesDiscriptions.swift in Sources */,
 				A049FEF22B46BE0D00558790 /* MainAdminViewForAdmin.swift in Sources */,
 				A03922692AE57981009B1020 /* RegisterChoiceView.swift in Sources */,
 				A049FEEE2B46B8CA00558790 /* AdminViewForAdmin.swift in Sources */,

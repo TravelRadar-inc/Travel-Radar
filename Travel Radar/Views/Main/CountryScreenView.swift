@@ -11,6 +11,7 @@ struct CountryScreenView: View {
     @State private var ifShowedTickets = false
     @State private var ifShowedVisa = false
     @State private var ifShowedDocuments = false
+    @State var countryDiscription: String
     
     let country: Country
     
@@ -44,7 +45,7 @@ struct CountryScreenView: View {
                 .frame(width: 350, height: 220)
                 .padding(.top)
                 
-                CountryInfoBtn(isShowedSomething: ifShowedDiscription, textOfButton: "📜 Описание", textOfElement: country.discription)
+                CountryInfoBtn(isShowedSomething: ifShowedDiscription, textOfButton: "📜 Описание", textOfElement: countryDiscription)
                 
                 CountryInfoBtn(isShowedSomething: ifShowedBorders, textOfButton: "🗺️ Границы", textOfElement: country.borders)
                 
@@ -52,7 +53,7 @@ struct CountryScreenView: View {
                 
                 CountryInfoBtn(isShowedSomething: ifShowedVisa, textOfButton: "🪪 Виза", textOfElement: country.visa)
                 
-                CountryInfoBtn(isShowedSomething: ifShowedDocuments, textOfButton: "📑 Документы", textOfElement: "• " + country.documents1 + "\n• " + country.documents2)
+                CountryInfoBtn(isShowedSomething: ifShowedDocuments, textOfButton: "📑 Документы", textOfElement: country.documents)
                 
             }
         }

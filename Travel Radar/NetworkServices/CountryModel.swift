@@ -6,9 +6,7 @@ struct Country: Decodable{
     let borders: String
     let tickets: String
     let visa: String
-    let documents1: String
-    var documents2: String
-    let discription: String
+    let documents: String
 }
 
 struct CountryResponse: Decodable{

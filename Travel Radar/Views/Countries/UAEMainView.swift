@@ -1,14 +1,8 @@
-//
-//  UAEMainView.swift
-//  Travel Radar
-//
-//  Created by Артемий Вишняков on 12/6/23.
-//
-
 import SwiftUI
 
 struct UAEMainView: View {
     @StateObject var ViewModel = NetworkCallModel()
+    @ObservedObject var discModel = CountriesDiscriptions()
     
     var body: some View {
         ZStack {
@@ -17,7 +11,7 @@ struct UAEMainView: View {
             
             VStack {
                 ForEach (ViewModel.countries, id: \.id) {country in
-                    CountryScreenView(CountryImage1: "UAE1", CountryImage2: "UAE2", CountryImage3: "UAE3", CountryImage4: "UAE4", country: country)
+                    CountryScreenView(CountryImage1: "UAE1", CountryImage2: "UAE2", CountryImage3: "UAE3", CountryImage4: "UAE4", countryDiscription: discModel.UaeDiscription, country: country)
                 }
             }
             .onAppear{
