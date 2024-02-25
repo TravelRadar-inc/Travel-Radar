@@ -30,14 +30,13 @@
 		A049FEE82B431D6100558790 /* UpdatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FEE72B431D6100558790 /* UpdatePasswordView.swift */; };
 		A049FEEA2B431D7000558790 /* UpdateEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FEE92B431D7000558790 /* UpdateEmailView.swift */; };
 		A049FEEE2B46B8CA00558790 /* AdminViewForAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FEED2B46B8CA00558790 /* AdminViewForAdmin.swift */; };
-		A049FEF02B46BCE700558790 /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FEEF2B46BCE700558790 /* AdminView.swift */; };
+		A049FEF02B46BCE700558790 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FEEF2B46BCE700558790 /* ChatView.swift */; };
 		A049FEF22B46BE0D00558790 /* MainAdminViewForAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FEF12B46BE0D00558790 /* MainAdminViewForAdmin.swift */; };
 		A049FEF42B46D09500558790 /* TechnicalSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FEF32B46D09500558790 /* TechnicalSupportView.swift */; };
 		A051D4832AF65A3D00C46391 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = A051D4822AF65A3D00C46391 /* GoogleSignIn */; };
 		A051D4852AF65A3D00C46391 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A051D4842AF65A3D00C46391 /* GoogleSignInSwift */; };
-		A051D4882AF65E1400C46391 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A051D4872AF65E1400C46391 /* GoogleService-Info.plist */; };
-		A051D48A2AF6775A00C46391 /* AuthGoogleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A051D4892AF6775A00C46391 /* AuthGoogleViewModel.swift */; };
 		A051D48D2AF678E000C46391 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A051D48C2AF678E000C46391 /* Utilities.swift */; };
+		A07C327C2B822A68005563CD /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07C327B2B822A68005563CD /* test.swift */; };
 		A08644C42AEE7E190059A578 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08644C32AEE7E190059A578 /* AuthService.swift */; };
 		A08644C72AEE7F680059A578 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A08644C62AEE7F680059A578 /* FirebaseAnalytics */; };
 		A08644C92AEE7F680059A578 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = A08644C82AEE7F680059A578 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -72,18 +71,21 @@
 		A08645172AEEA38F0059A578 /* SettingsBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08645162AEEA38F0059A578 /* SettingsBtn.swift */; };
 		A08645192AEEA3A60059A578 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08645182AEEA3A60059A578 /* SettingsView.swift */; };
 		A086451B2AEEA4150059A578 /* SettingsText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A086451A2AEEA4150059A578 /* SettingsText.swift */; };
-		A08645212AEFFD160059A578 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08645202AEFFD160059A578 /* User.swift */; };
-		A08645242AEFFFD30059A578 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08645232AEFFFD30059A578 /* AuthManager.swift */; };
 		A0896CE82B1CA16100A6AFC7 /* EmailSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0896CE72B1CA16100A6AFC7 /* EmailSectionView.swift */; };
 		A0896CEB2B1CEBC800A6AFC7 /* TabBarItemsPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0896CEA2B1CEBC800A6AFC7 /* TabBarItemsPreferenceKey.swift */; };
 		A0896CED2B1D07DA00A6AFC7 /* SettingsLogOutBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0896CEC2B1D07DA00A6AFC7 /* SettingsLogOutBtn.swift */; };
 		A090AF072B5D96E100C93C78 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A090AF062B5D96E100C93C78 /* SDWebImageSwiftUI */; };
-		A0AF140E2B47208100B2AA46 /* testChatgpt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF140D2B47208100B2AA46 /* testChatgpt.swift */; };
 		A0AF14102B4DD39600B2AA46 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF140F2B4DD39600B2AA46 /* MessageView.swift */; };
-		A0AF14122B4EFCE500B2AA46 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF14112B4EFCE500B2AA46 /* DatabaseManager.swift */; };
+		A0AF14122B4EFCE500B2AA46 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF14112B4EFCE500B2AA46 /* ChatModel.swift */; };
 		A0C828BD2B0BE37600EA1A10 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828BC2B0BE37600EA1A10 /* MapView.swift */; };
 		A0C828BF2B0BE61800EA1A10 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828BE2B0BE61800EA1A10 /* CustomTabBarView.swift */; };
 		A0C828C12B0BF16A00EA1A10 /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828C02B0BF16A00EA1A10 /* CustomTabBarContainerView.swift */; };
+		A0EAAAD42B7B806B009B422B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0EAAAD32B7B806B009B422B /* GoogleService-Info.plist */; };
+		A0EAAAD82B7B8C9A009B422B /* DataBaseMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAAAD72B7B8C9A009B422B /* DataBaseMananger.swift */; };
+		A0EAAADA2B7BC9C4009B422B /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAAAD92B7BC9C4009B422B /* CustomNavigationBar.swift */; };
+		A0EAAADC2B7E41EF009B422B /* ChatForAdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAAADB2B7E41EF009B422B /* ChatForAdminView.swift */; };
+		A0EAAADF2B7E6C19009B422B /* UserMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAAADE2B7E6C19009B422B /* UserMananger.swift */; };
+		A0EAAAE12B7E78A0009B422B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAAAE02B7E78A0009B422B /* User.swift */; };
 		D10BDF1C2B20B5400066BE62 /* UAEMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10BDF1B2B20B5400066BE62 /* UAEMainView.swift */; };
 		D10BDF1E2B20B82D0066BE62 /* TurkeyMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10BDF1D2B20B82D0066BE62 /* TurkeyMainView.swift */; };
 		D13DC7F92B125B9B006B2CAE /* CountryInfoBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13DC7F82B125B9B006B2CAE /* CountryInfoBtn.swift */; };
@@ -134,13 +136,12 @@
 		A049FEE72B431D6100558790 /* UpdatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordView.swift; sourceTree = "<group>"; };
 		A049FEE92B431D7000558790 /* UpdateEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateEmailView.swift; sourceTree = "<group>"; };
 		A049FEED2B46B8CA00558790 /* AdminViewForAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewForAdmin.swift; sourceTree = "<group>"; };
-		A049FEEF2B46BCE700558790 /* AdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
+		A049FEEF2B46BCE700558790 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		A049FEF12B46BE0D00558790 /* MainAdminViewForAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAdminViewForAdmin.swift; sourceTree = "<group>"; };
 		A049FEF32B46D09500558790 /* TechnicalSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalSupportView.swift; sourceTree = "<group>"; };
 		A051D4862AF65A9B00C46391 /* Travel-Radar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Travel-Radar-Info.plist"; sourceTree = SOURCE_ROOT; };
-		A051D4872AF65E1400C46391 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A051D4892AF6775A00C46391 /* AuthGoogleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthGoogleViewModel.swift; sourceTree = "<group>"; };
 		A051D48C2AF678E000C46391 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		A07C327B2B822A68005563CD /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		A08644C32AEE7E190059A578 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A08644FC2AEE83390059A578 /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
 		A08644FE2AEE874A0059A578 /* SecureFieldMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureFieldMainView.swift; sourceTree = "<group>"; };
@@ -148,17 +149,20 @@
 		A08645162AEEA38F0059A578 /* SettingsBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsBtn.swift; sourceTree = "<group>"; };
 		A08645182AEEA3A60059A578 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		A086451A2AEEA4150059A578 /* SettingsText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsText.swift; sourceTree = "<group>"; };
-		A08645202AEFFD160059A578 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		A08645232AEFFFD30059A578 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		A0896CE72B1CA16100A6AFC7 /* EmailSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSectionView.swift; sourceTree = "<group>"; };
 		A0896CEA2B1CEBC800A6AFC7 /* TabBarItemsPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemsPreferenceKey.swift; sourceTree = "<group>"; };
 		A0896CEC2B1D07DA00A6AFC7 /* SettingsLogOutBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLogOutBtn.swift; sourceTree = "<group>"; };
-		A0AF140D2B47208100B2AA46 /* testChatgpt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testChatgpt.swift; sourceTree = "<group>"; };
 		A0AF140F2B4DD39600B2AA46 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
-		A0AF14112B4EFCE500B2AA46 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		A0AF14112B4EFCE500B2AA46 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		A0C828BC2B0BE37600EA1A10 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A0C828BE2B0BE61800EA1A10 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		A0C828C02B0BF16A00EA1A10 /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
+		A0EAAAD32B7B806B009B422B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A0EAAAD72B7B8C9A009B422B /* DataBaseMananger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseMananger.swift; sourceTree = "<group>"; };
+		A0EAAAD92B7BC9C4009B422B /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		A0EAAADB2B7E41EF009B422B /* ChatForAdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatForAdminView.swift; sourceTree = "<group>"; };
+		A0EAAADE2B7E6C19009B422B /* UserMananger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMananger.swift; sourceTree = "<group>"; };
+		A0EAAAE02B7E78A0009B422B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D10BDF1B2B20B5400066BE62 /* UAEMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UAEMainView.swift; sourceTree = "<group>"; };
 		D10BDF1D2B20B82D0066BE62 /* TurkeyMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurkeyMainView.swift; sourceTree = "<group>"; };
 		D13DC7F82B125B9B006B2CAE /* CountryInfoBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfoBtn.swift; sourceTree = "<group>"; };
@@ -251,6 +255,7 @@
 				A03922602AE5777D009B1020 /* Views */,
 				D173A99E2B18DC7C000DBDCA /* ViewModels */,
 				D173A99D2B18DA30000DBDCA /* NetworkServices */,
+				A0EAAADD2B7E6BFA009B422B /* User */,
 				A08645222AEFFFB00059A578 /* RegLogInServices */,
 				A086451C2AEEFF960059A578 /* Texts */,
 				A03922562AE56AF5009B1020 /* Preview Content */,
@@ -304,9 +309,13 @@
 			children = (
 				A049FEED2B46B8CA00558790 /* AdminViewForAdmin.swift */,
 				A049FEF12B46BE0D00558790 /* MainAdminViewForAdmin.swift */,
+				A07C327B2B822A68005563CD /* test.swift */,
+				A0EAAADB2B7E41EF009B422B /* ChatForAdminView.swift */,
 				A0AF140F2B4DD39600B2AA46 /* MessageView.swift */,
-				A0AF14112B4EFCE500B2AA46 /* DatabaseManager.swift */,
-				A049FEEF2B46BCE700558790 /* AdminView.swift */,
+				A0AF14112B4EFCE500B2AA46 /* ChatModel.swift */,
+				A0EAAAD72B7B8C9A009B422B /* DataBaseMananger.swift */,
+				A049FEEF2B46BCE700558790 /* ChatView.swift */,
+				A0EAAAD92B7BC9C4009B422B /* CustomNavigationBar.swift */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -341,13 +350,10 @@
 			isa = PBXGroup;
 			children = (
 				A051D48C2AF678E000C46391 /* Utilities.swift */,
-				A08645232AEFFFD30059A578 /* AuthManager.swift */,
 				A08644C32AEE7E190059A578 /* AuthService.swift */,
 				D173A9972B18D7DC000DBDCA /* GoogleSignInHelper.swift */,
 				A049FED82B386FC500558790 /* AppleSignInHepler.swift */,
-				A08645202AEFFD160059A578 /* User.swift */,
-				A051D4892AF6775A00C46391 /* AuthGoogleViewModel.swift */,
-				A051D4872AF65E1400C46391 /* GoogleService-Info.plist */,
+				A0EAAAD32B7B806B009B422B /* GoogleService-Info.plist */,
 			);
 			path = RegLogInServices;
 			sourceTree = "<group>";
@@ -356,13 +362,21 @@
 			isa = PBXGroup;
 			children = (
 				A0896CE72B1CA16100A6AFC7 /* EmailSectionView.swift */,
-				A0AF140D2B47208100B2AA46 /* testChatgpt.swift */,
 				A049FEE72B431D6100558790 /* UpdatePasswordView.swift */,
 				A049FEF32B46D09500558790 /* TechnicalSupportView.swift */,
 				A049FEE92B431D7000558790 /* UpdateEmailView.swift */,
 				A08645182AEEA3A60059A578 /* SettingsView.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		A0EAAADD2B7E6BFA009B422B /* User */ = {
+			isa = PBXGroup;
+			children = (
+				A0EAAADE2B7E6C19009B422B /* UserMananger.swift */,
+				A0EAAAE02B7E78A0009B422B /* User.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		D173A9922B189DC0000DBDCA /* LabelTexts */ = {
@@ -539,7 +553,7 @@
 			files = (
 				A03922582AE56AF5009B1020 /* Preview Assets.xcassets in Resources */,
 				A03922552AE56AF5009B1020 /* Assets.xcassets in Resources */,
-				A051D4882AF65E1400C46391 /* GoogleService-Info.plist in Resources */,
+				A0EAAAD42B7B806B009B422B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,10 +565,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0896CEB2B1CEBC800A6AFC7 /* TabBarItemsPreferenceKey.swift in Sources */,
+				A07C327C2B822A68005563CD /* test.swift in Sources */,
 				A049FEE02B3ACEF300558790 /* SignUpWithEmailBtn.swift in Sources */,
-				A0AF14122B4EFCE500B2AA46 /* DatabaseManager.swift in Sources */,
+				A0AF14122B4EFCE500B2AA46 /* ChatModel.swift in Sources */,
 				D173A98D2B188B4F000DBDCA /* IrelandMainView.swift in Sources */,
-				A08645242AEFFFD30059A578 /* AuthManager.swift in Sources */,
 				A08644FD2AEE83390059A578 /* MainAppView.swift in Sources */,
 				A03922732AE58F04009B1020 /* MiniBtn.swift in Sources */,
 				A049FEE42B4315C600558790 /* SettingsDeleteAccountBtn.swift in Sources */,
@@ -567,11 +581,15 @@
 				A051D48D2AF678E000C46391 /* Utilities.swift in Sources */,
 				A086451B2AEEA4150059A578 /* SettingsText.swift in Sources */,
 				A039226F2AE58D94009B1020 /* RegisterBtn.swift in Sources */,
-				A049FEF02B46BCE700558790 /* AdminView.swift in Sources */,
+				A0EAAAD82B7B8C9A009B422B /* DataBaseMananger.swift in Sources */,
+				A049FEF02B46BCE700558790 /* ChatView.swift in Sources */,
 				A03922532AE56AF4009B1020 /* LogInView.swift in Sources */,
 				A03922652AE5780D009B1020 /* TextMainView.swift in Sources */,
+				A0EAAADA2B7BC9C4009B422B /* CustomNavigationBar.swift in Sources */,
+				A0EAAADF2B7E6C19009B422B /* UserMananger.swift in Sources */,
 				A049FEEA2B431D7000558790 /* UpdateEmailView.swift in Sources */,
 				D14489802B08A71000D94E68 /* SpainMainView.swift in Sources */,
+				A0EAAADC2B7E41EF009B422B /* ChatForAdminView.swift in Sources */,
 				A049FEE22B3ACF7700558790 /* LogInBtn.swift in Sources */,
 				A08645172AEEA38F0059A578 /* SettingsBtn.swift in Sources */,
 				A00B32272AFABCD200F4F605 /* CountriesListView.swift in Sources */,
@@ -588,17 +606,15 @@
 				A08644FF2AEE874A0059A578 /* SecureFieldMainView.swift in Sources */,
 				A08645152AEEA36A0059A578 /* CountryBtn.swift in Sources */,
 				A049FED92B386FC500558790 /* AppleSignInHepler.swift in Sources */,
-				A0AF140E2B47208100B2AA46 /* testChatgpt.swift in Sources */,
 				D18EF6242B04FA0300E6C4AF /* Alert.swift in Sources */,
-				A08645212AEFFD160059A578 /* User.swift in Sources */,
 				A039225F2AE5772D009B1020 /* EnterBtn.swift in Sources */,
 				A039226B2AE57E2C009B1020 /* TextRegisterView.swift in Sources */,
 				D10BDF1E2B20B82D0066BE62 /* TurkeyMainView.swift in Sources */,
+				A0EAAAE12B7E78A0009B422B /* User.swift in Sources */,
 				D173A9982B18D7DC000DBDCA /* GoogleSignInHelper.swift in Sources */,
 				A0C828C12B0BF16A00EA1A10 /* CustomTabBarContainerView.swift in Sources */,
 				D173A9962B18D79B000DBDCA /* SignUpEmailInViewModel.swift in Sources */,
 				A0C828BF2B0BE61800EA1A10 /* CustomTabBarView.swift in Sources */,
-				A051D48A2AF6775A00C46391 /* AuthGoogleViewModel.swift in Sources */,
 				D1DE48C82B0412AD00F5C50F /* UsaMainView.swift in Sources */,
 				D173A98B2B1886F4000DBDCA /* FranceMainView.swift in Sources */,
 				A0C828BD2B0BE37600EA1A10 /* MapView.swift in Sources */,

@@ -30,8 +30,9 @@ struct RegisterChoiceView: View {
                         return
                     }
                     Task{
-                        do {_ = try await AuthService.shared.createUser(email: viewModel.email, password: viewModel.password)
+                        do { let authDataResult = try await AuthService.shared.createUser(email: viewModel.email, password: viewModel.password)
                             isShowingLogInView.toggle()
+                            try await UserMananger.shared.creatNewUser(auth: authDataResult)
                         } catch{
                             alertMessage = "Ошибка регистрации \(error.localizedDescription)"
                             self.isShowAlert.toggle()

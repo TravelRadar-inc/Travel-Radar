@@ -25,13 +25,6 @@ class AuthService{
     static let shared = AuthService()
     private init () {}
     
-//    func getCurrentUser() -> AuthDataResultModel{
-//        guard let authUser = Auth.auth().currentUser else{
-//            
-//        }
-//        return AuthDataResultModel(user: authUser)
-//    }
-    
     func getAuthUser() throws ->AuthDataResultModel{
         guard let user = Auth.auth().currentUser else{
             throw URLError(.badServerResponse)
@@ -64,7 +57,7 @@ class AuthService{
     
     func updateEmail(email:String) async throws{
         guard let user = Auth.auth().currentUser else{
-            throw URLError(.badServerResponse)
+            throw URLError(.badServerResponse) 
         }
         try await user.updateEmail(to: email)
     }

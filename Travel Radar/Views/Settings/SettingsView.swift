@@ -73,9 +73,9 @@ struct SettingsView: View {
                     Text("Стиль карты")
                 }
                 if let user = Auth.auth().currentUser{
-                    if user.uid != "mDMX2tTyvYfM8qtCRWdgaMaMa7l2" || user.uid != "Z9GVW4GMORPBPfQUOvX1UTarnl23"{
+                    if user.uid != "M0utShwhVqgrtBI2TI2yKo0eNfR2" && user.uid != "Z9GVW4GMORPBPfQUOvX1UTarnl23"{
                         TechnicalSupportView()
-                    }
+                    }else{}
                 }
                 
                 LogOut(isShowContentView: $isShowContentView, isShowAlert: $isShowAlert, alertMessage: $alertMessage)

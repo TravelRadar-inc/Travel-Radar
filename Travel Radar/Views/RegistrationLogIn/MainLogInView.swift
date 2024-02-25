@@ -13,12 +13,14 @@ final class AuthenticationViewModel: ObservableObject{
     func singInGoogle() async throws{
         let helper = SignInGoogleHelper()
         let tokens = try await helper.signIn()
-        try await AuthService.shared.signInWithGoogle(tokens: tokens)
+        let authDataResult = try await AuthService.shared.signInWithGoogle(tokens: tokens)
+        try await UserMananger.shared.creatNewUser(auth: authDataResult)
     }
     func singInApple() async throws{
         let helper = SignInAppleHelper()
         let tokens = try await helper.startSignInWithAppleFlow()
-        try await AuthService.shared.signInWithApple(tokens: tokens)
+        let authDataResult = try await AuthService.shared.signInWithApple(tokens: tokens)
+        try await UserMananger.shared.creatNewUser(auth: authDataResult)
     }
 }
 
