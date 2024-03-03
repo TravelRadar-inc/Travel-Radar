@@ -5,11 +5,13 @@ struct CountriesListView: View {
     var body: some View {
         NavigationStack{
             List{
-                ForEach(0..<10) { index in
+                ForEach(viewModel.annotations) { annotation in
                     NavigationLink {
-                        AnyView(viewModel.countryView[viewModel.numberCounry[index]!]!)
+                        Group{
+                            AnyView(annotation.view)
+                        }
                     } label: {
-                        CountriesListBtnView(flagName: viewModel.flagCountry[viewModel.numberCounry[index]!]!, nameOfCountry: viewModel.countryRusNames[index])
+                        CountriesListBtnView(flagName: annotation.imageName, nameOfCountry: annotation.countyNameRus)
                     }
                 }
             }

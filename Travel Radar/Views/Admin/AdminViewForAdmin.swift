@@ -25,10 +25,10 @@ final class AdminViewForAdminViewModel: ObservableObject{
             do{
                 let chats = try await DataBaseMananger.shared.fetchChats()
                 self.chats = chats
-                print(chats.count)
+                //print(chats.count)
                 self.unwrappening()
             }catch{
-                print("error")
+                //print("error")
             }
         }
     }
@@ -55,9 +55,9 @@ final class AdminViewForAdminViewModel: ObservableObject{
                     let message = try await fetchLastMessage(chatId: chat.id)
                     self.lastMessages[chat.id] = message
                     self.userInfos[chat.id] = user
-                    print(1234)
+                    //print(1234)
                 } catch{
-                    print("error")
+                    //print("error")
                 }
             }
         }

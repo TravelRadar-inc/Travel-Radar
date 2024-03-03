@@ -20,7 +20,7 @@ class DataBaseMananger{
         let snapshot = try await chatRef.getDocuments()
         let strongSelf = self
         let chats = strongSelf.createChatsFromFirebaseSnapshot(snapshot: snapshot)
-        print(chats.count)
+        //print(chats.count)
         return chats
     }
     

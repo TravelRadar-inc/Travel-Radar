@@ -5,6 +5,7 @@ final class MessageViewModel: ObservableObject{
     func dateToString(date: Date) -> String {
             let formatter = DateFormatter()
             formatter.dateFormat = "HH:mm dd.MM.yyyy"
+            print(formatter.string(from: date), Date())
             return formatter.string(from: date)
         }
 }
@@ -18,9 +19,11 @@ struct MessageView: View {
                 VStack(alignment: .leading, spacing: 0) {
                     Text(message.text)
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        .foregroundColor(.black)
                     Text(viewModel.dateToString(date: message.createdAt))
                         .font(.system(size: 12))
                         .frame(alignment: .bottomTrailing)
+                        .foregroundColor(.black)
                 }
                 .padding()
                 .frame(maxWidth: 260,alignment: .topLeading)

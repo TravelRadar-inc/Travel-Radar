@@ -49,6 +49,7 @@ final class ChatViewModel: ObservableObject{
         Task{ [weak self] in
             do{
                 let messages = try await ChatModel(id: chatId).fetchMessages()
+                print("Загружено сообщений: \(messages.count)", Date())
                 self?.messages = messages
             }catch{
                 print("error")
@@ -70,18 +71,20 @@ struct ChatView: View {
             ScrollViewReader{ scrollView in
                 ScrollView(showsIndicators: false){
                     VStack(spacing: 8){
-                            ForEach(0..<viewModel.messages.count , id: \.self) {idx in
-                                MessageView(message: viewModel.messages[idx])
+                        ForEach(viewModel.messages) { message in
+                            MessageView(message: message)
                         }
-                        .onChange(of: viewModel.messages) {newValue in
-                            scrollView.scrollTo(viewModel.messages.count - 1, anchor: .bottom)
-                        }
+                        
+                    }
+                }.onChange(of: viewModel.messages.count) { _ in
+                    if let lastMessage = viewModel.messages.last {
+                        scrollView.scrollTo(lastMessage.id, anchor: .bottom)
                     }
                 }
             }
             HStack{
-                TextField("Message", text: $text, axis: .vertical)
-                    .padding()
+                TextField("    Message", text: $text, axis: .vertical)
+                    .padding(.leading)
                 Button{
                     Task{
                         do{
@@ -110,7 +113,7 @@ struct ChatView: View {
 }
 
 #Preview {
-    ChatView(chatId: "uuafOsfGhtbuGmFvhjkckpNliwJ3")
+    ChatView(chatId: "aj3xfiMrrpZHgmqtrJs01eWVKMg2")
 }
 
 
