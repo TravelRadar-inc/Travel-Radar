@@ -80,6 +80,8 @@
 		A0C828BD2B0BE37600EA1A10 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828BC2B0BE37600EA1A10 /* MapView.swift */; };
 		A0C828BF2B0BE61800EA1A10 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828BE2B0BE61800EA1A10 /* CustomTabBarView.swift */; };
 		A0C828C12B0BF16A00EA1A10 /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828C02B0BF16A00EA1A10 /* CustomTabBarContainerView.swift */; };
+		A0D63D9A2B94D01D000A2297 /* UpdateUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D63D992B94D01D000A2297 /* UpdateUserInfo.swift */; };
+		A0D63D9C2B94D6DE000A2297 /* UpdateUserSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D63D9B2B94D6DE000A2297 /* UpdateUserSectionView.swift */; };
 		A0EAAAD42B7B806B009B422B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0EAAAD32B7B806B009B422B /* GoogleService-Info.plist */; };
 		A0EAAAD82B7B8C9A009B422B /* DataBaseMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAAAD72B7B8C9A009B422B /* DataBaseMananger.swift */; };
 		A0EAAADA2B7BC9C4009B422B /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAAAD92B7BC9C4009B422B /* CustomNavigationBar.swift */; };
@@ -157,6 +159,8 @@
 		A0C828BC2B0BE37600EA1A10 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A0C828BE2B0BE61800EA1A10 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		A0C828C02B0BF16A00EA1A10 /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
+		A0D63D992B94D01D000A2297 /* UpdateUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserInfo.swift; sourceTree = "<group>"; };
+		A0D63D9B2B94D6DE000A2297 /* UpdateUserSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserSectionView.swift; sourceTree = "<group>"; };
 		A0EAAAD32B7B806B009B422B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A0EAAAD72B7B8C9A009B422B /* DataBaseMananger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseMananger.swift; sourceTree = "<group>"; };
 		A0EAAAD92B7BC9C4009B422B /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
@@ -363,6 +367,8 @@
 			children = (
 				A0896CE72B1CA16100A6AFC7 /* EmailSectionView.swift */,
 				A049FEE72B431D6100558790 /* UpdatePasswordView.swift */,
+				A0D63D992B94D01D000A2297 /* UpdateUserInfo.swift */,
+				A0D63D9B2B94D6DE000A2297 /* UpdateUserSectionView.swift */,
 				A049FEF32B46D09500558790 /* TechnicalSupportView.swift */,
 				A049FEE92B431D7000558790 /* UpdateEmailView.swift */,
 				A08645182AEEA3A60059A578 /* SettingsView.swift */,
@@ -596,12 +602,14 @@
 				D147A3B52B6F8D59005C90E3 /* CountriesDiscriptions.swift in Sources */,
 				A049FEF22B46BE0D00558790 /* MainAdminViewForAdmin.swift in Sources */,
 				A03922692AE57981009B1020 /* RegisterChoiceView.swift in Sources */,
+				A0D63D9C2B94D6DE000A2297 /* UpdateUserSectionView.swift in Sources */,
 				A049FEEE2B46B8CA00558790 /* AdminViewForAdmin.swift in Sources */,
 				A08644C42AEE7E190059A578 /* AuthService.swift in Sources */,
 				D1DE48CC2B0412E700F5C50F /* NetworkManager.swift in Sources */,
 				A03922672AE5788B009B1020 /* TextFieldMainView.swift in Sources */,
 				D173A99A2B18D828000DBDCA /* TabBarItem.swift in Sources */,
 				D173A9942B18D761000DBDCA /* SettingsViewModel.swift in Sources */,
+				A0D63D9A2B94D01D000A2297 /* UpdateUserInfo.swift in Sources */,
 				D1DE48CA2B0412C500F5C50F /* GermanyMainView.swift in Sources */,
 				A08644FF2AEE874A0059A578 /* SecureFieldMainView.swift in Sources */,
 				A08645152AEEA36A0059A578 /* CountryBtn.swift in Sources */,

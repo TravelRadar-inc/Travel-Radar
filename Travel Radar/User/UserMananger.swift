@@ -43,4 +43,12 @@ final class UserMananger{
     func deleteUser(userId: String) async throws{
         try await Firestore.firestore().collection("users").document(userId).delete()
     }
+    
+    func updateName(userId:String, name: String) async throws{
+        try await Firestore.firestore().collection("users").document(userId).setData(["name":name], merge: true)
+    }
+    
+    func updatePhoto(userId:String, photoURL: String) async throws{
+        try await Firestore.firestore().collection("users").document(userId).setData(["photoURL":photoURL], merge: true)
+    }
 }

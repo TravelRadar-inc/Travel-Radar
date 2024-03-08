@@ -18,7 +18,7 @@ struct MainAppView: View {
             CustomTabBarContainerView(selection: $tabSelection){
                 CountriesListView()
                     .tabBarItem(tab: .list, selection: $tabSelection)
-                MapView(styleForMap: settingsModel.$styleOfMap)
+                MapView()
                     .tabBarItem(tab: .map, selection: $tabSelection)
                 SettingsView()
                     .tabBarItem(tab: .settings, selection: $tabSelection)

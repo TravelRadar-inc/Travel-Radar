@@ -1,13 +1,10 @@
 import MapKit
 import SwiftUI
-
 struct MapView: View {
     @StateObject var viewModel = MapViewModelView()
     @State var viewModelStyle = SettingsView()
-    @Binding var styleForMap: MapStyle
-    //    @Binding var mapType: MKMapType
     var body: some View {
-        Map(position: $viewModel.camera){
+        Map(position: $viewModel.camera) {
             ForEach(viewModel.annotations){annotation in
                 Annotation("", coordinate: annotation.coordinate) {
                     NavigationLink {
@@ -25,7 +22,7 @@ struct MapView: View {
                     
                 }
             }
-        }.mapStyle(styleForMap)
+        }
     }
 }
 
@@ -37,3 +34,4 @@ struct CountryAnnotation: Identifiable {
     let imageName: String
     let view: any View
 }
+

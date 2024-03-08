@@ -10,7 +10,7 @@ struct MainAdminViewForAdmin: View {
                     .tabBarItem(tab: .admin, selection: $tabSelection)
                 CountriesListView()
                     .tabBarItem(tab: .list, selection: $tabSelection)
-                MapView(styleForMap: settingsModel.$styleOfMap)
+                MapView()
                     .tabBarItem(tab: .map, selection: $tabSelection)
                 SettingsView()
                     .tabBarItem(tab: .settings, selection: $tabSelection)
