@@ -21,7 +21,7 @@ struct SettingsView: View {
                 }
                 //UpdateUserSectionView()
                 if let user = Auth.auth().currentUser{
-                    if user.uid != "M0utShwhVqgrtBI2TI2yKo0eNfR2" && user.uid != "Z9GVW4GMORPBPfQUOvX1UTarnl23"{
+                    if user.uid != "M0utShwhVqgrtBI2TI2yKo0eNfR2" && user.uid != "YOSCUB796wfe6xWk8zpoxNluKH62"{
                         TechnicalSupportView()
                     }else{}
                 }

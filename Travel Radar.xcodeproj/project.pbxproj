@@ -75,6 +75,7 @@
 		A0896CEB2B1CEBC800A6AFC7 /* TabBarItemsPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0896CEA2B1CEBC800A6AFC7 /* TabBarItemsPreferenceKey.swift */; };
 		A0896CED2B1D07DA00A6AFC7 /* SettingsLogOutBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0896CEC2B1D07DA00A6AFC7 /* SettingsLogOutBtn.swift */; };
 		A090AF072B5D96E100C93C78 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A090AF062B5D96E100C93C78 /* SDWebImageSwiftUI */; };
+		A0A2EF242B9B8BF500980053 /* Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0A2EF232B9B8BF500980053 /* Icon.xcassets */; };
 		A0AF14102B4DD39600B2AA46 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF140F2B4DD39600B2AA46 /* MessageView.swift */; };
 		A0AF14122B4EFCE500B2AA46 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF14112B4EFCE500B2AA46 /* ChatModel.swift */; };
 		A0C828BD2B0BE37600EA1A10 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828BC2B0BE37600EA1A10 /* MapView.swift */; };
@@ -154,6 +155,7 @@
 		A0896CE72B1CA16100A6AFC7 /* EmailSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSectionView.swift; sourceTree = "<group>"; };
 		A0896CEA2B1CEBC800A6AFC7 /* TabBarItemsPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemsPreferenceKey.swift; sourceTree = "<group>"; };
 		A0896CEC2B1D07DA00A6AFC7 /* SettingsLogOutBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLogOutBtn.swift; sourceTree = "<group>"; };
+		A0A2EF232B9B8BF500980053 /* Icon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icon.xcassets; sourceTree = "<group>"; };
 		A0AF140F2B4DD39600B2AA46 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		A0AF14112B4EFCE500B2AA46 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		A0C828BC2B0BE37600EA1A10 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 			children = (
 				A03922542AE56AF5009B1020 /* Assets.xcassets */,
 				A03922572AE56AF5009B1020 /* Preview Assets.xcassets */,
+				A0A2EF232B9B8BF500980053 /* Icon.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -559,6 +562,7 @@
 			files = (
 				A03922582AE56AF5009B1020 /* Preview Assets.xcassets in Resources */,
 				A03922552AE56AF5009B1020 /* Assets.xcassets in Resources */,
+				A0A2EF242B9B8BF500980053 /* Icon.xcassets in Resources */,
 				A0EAAAD42B7B806B009B422B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -770,6 +774,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "Travel Radar/Travel Radar.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -783,14 +788,14 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "test.Travel-Radar";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appstudio.travelradar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -803,6 +808,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "Travel Radar/Travel Radar.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -816,14 +822,14 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "test.Travel-Radar";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appstudio.travelradar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
