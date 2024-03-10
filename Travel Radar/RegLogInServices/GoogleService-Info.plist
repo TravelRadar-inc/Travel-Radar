@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>640146848434-du14fr9orubncalft4m1nhlt4vfpb63k.apps.googleusercontent.com</string>
+	<string>640146848434-govn4o47jmq21vi107bda9hv1ovudcf6.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.640146848434-du14fr9orubncalft4m1nhlt4vfpb63k</string>
+	<string>com.googleusercontent.apps.640146848434-govn4o47jmq21vi107bda9hv1ovudcf6</string>
 	<key>API_KEY</key>
 	<string>AIzaSyBl7VX8D5YlOEu2GpFBHi6n83MP_2bThjg</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>test.Travel-Radar</string>
+	<string>com.appstudio.travelradar</string>
 	<key>PROJECT_ID</key>
 	<string>travel-radar-e1e68</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:640146848434:ios:34bd9d90101725b57c27ab</string>
+	<string>1:640146848434:ios:36095b5b26ffb48c7c27ab</string>
 </dict>
 </plist>

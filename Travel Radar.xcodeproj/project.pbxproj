@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A00B32272AFABCD200F4F605 /* CountriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B32262AFABCD200F4F605 /* CountriesListView.swift */; };
+		A0194EA22B9E0EF6000FFC9A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0194EA12B9E0EF6000FFC9A /* GoogleService-Info.plist */; };
 		A03922512AE56AF4009B1020 /* Travel_RadarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922502AE56AF4009B1020 /* Travel_RadarApp.swift */; };
 		A03922532AE56AF4009B1020 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922522AE56AF4009B1020 /* LogInView.swift */; };
 		A03922552AE56AF5009B1020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03922542AE56AF5009B1020 /* Assets.xcassets */; };
-		A03922582AE56AF5009B1020 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03922572AE56AF5009B1020 /* Preview Assets.xcassets */; };
 		A039225F2AE5772D009B1020 /* EnterBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039225E2AE5772D009B1020 /* EnterBtn.swift */; };
 		A03922632AE577B9009B1020 /* BackgroundMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922622AE577B9009B1020 /* BackgroundMainView.swift */; };
 		A03922652AE5780D009B1020 /* TextMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922642AE5780D009B1020 /* TextMainView.swift */; };
@@ -36,6 +36,8 @@
 		A051D4832AF65A3D00C46391 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = A051D4822AF65A3D00C46391 /* GoogleSignIn */; };
 		A051D4852AF65A3D00C46391 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A051D4842AF65A3D00C46391 /* GoogleSignInSwift */; };
 		A051D48D2AF678E000C46391 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A051D48C2AF678E000C46391 /* Utilities.swift */; };
+		A064DF312B9C998D002AFBF3 /* Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A064DF302B9C998D002AFBF3 /* Icon.xcassets */; };
+		A064DF322B9C9A7B002AFBF3 /* Travel-Radar-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A051D4862AF65A9B00C46391 /* Travel-Radar-Info.plist */; };
 		A07C327C2B822A68005563CD /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07C327B2B822A68005563CD /* test.swift */; };
 		A08644C42AEE7E190059A578 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08644C32AEE7E190059A578 /* AuthService.swift */; };
 		A08644C72AEE7F680059A578 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A08644C62AEE7F680059A578 /* FirebaseAnalytics */; };
@@ -75,7 +77,6 @@
 		A0896CEB2B1CEBC800A6AFC7 /* TabBarItemsPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0896CEA2B1CEBC800A6AFC7 /* TabBarItemsPreferenceKey.swift */; };
 		A0896CED2B1D07DA00A6AFC7 /* SettingsLogOutBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0896CEC2B1D07DA00A6AFC7 /* SettingsLogOutBtn.swift */; };
 		A090AF072B5D96E100C93C78 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A090AF062B5D96E100C93C78 /* SDWebImageSwiftUI */; };
-		A0A2EF242B9B8BF500980053 /* Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0A2EF232B9B8BF500980053 /* Icon.xcassets */; };
 		A0AF14102B4DD39600B2AA46 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF140F2B4DD39600B2AA46 /* MessageView.swift */; };
 		A0AF14122B4EFCE500B2AA46 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF14112B4EFCE500B2AA46 /* ChatModel.swift */; };
 		A0C828BD2B0BE37600EA1A10 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828BC2B0BE37600EA1A10 /* MapView.swift */; };
@@ -83,7 +84,6 @@
 		A0C828C12B0BF16A00EA1A10 /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828C02B0BF16A00EA1A10 /* CustomTabBarContainerView.swift */; };
 		A0D63D9A2B94D01D000A2297 /* UpdateUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D63D992B94D01D000A2297 /* UpdateUserInfo.swift */; };
 		A0D63D9C2B94D6DE000A2297 /* UpdateUserSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D63D9B2B94D6DE000A2297 /* UpdateUserSectionView.swift */; };
-		A0EAAAD42B7B806B009B422B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0EAAAD32B7B806B009B422B /* GoogleService-Info.plist */; };
 		A0EAAAD82B7B8C9A009B422B /* DataBaseMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAAAD72B7B8C9A009B422B /* DataBaseMananger.swift */; };
 		A0EAAADA2B7BC9C4009B422B /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAAAD92B7BC9C4009B422B /* CustomNavigationBar.swift */; };
 		A0EAAADC2B7E41EF009B422B /* ChatForAdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAAADB2B7E41EF009B422B /* ChatForAdminView.swift */; };
@@ -116,11 +116,11 @@
 
 /* Begin PBXFileReference section */
 		A00B32262AFABCD200F4F605 /* CountriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListView.swift; sourceTree = "<group>"; };
+		A0194EA12B9E0EF6000FFC9A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A039224D2AE56AF4009B1020 /* Travel Radar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travel Radar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03922502AE56AF4009B1020 /* Travel_RadarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travel_RadarApp.swift; sourceTree = "<group>"; };
 		A03922522AE56AF4009B1020 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		A03922542AE56AF5009B1020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A03922572AE56AF5009B1020 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A039225E2AE5772D009B1020 /* EnterBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterBtn.swift; sourceTree = "<group>"; };
 		A03922622AE577B9009B1020 /* BackgroundMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMainView.swift; sourceTree = "<group>"; };
 		A03922642AE5780D009B1020 /* TextMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMainView.swift; sourceTree = "<group>"; };
@@ -144,6 +144,7 @@
 		A049FEF32B46D09500558790 /* TechnicalSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalSupportView.swift; sourceTree = "<group>"; };
 		A051D4862AF65A9B00C46391 /* Travel-Radar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Travel-Radar-Info.plist"; sourceTree = SOURCE_ROOT; };
 		A051D48C2AF678E000C46391 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		A064DF302B9C998D002AFBF3 /* Icon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Icon.xcassets; path = ../../../../Downloads/AppIcons/Icon.xcassets; sourceTree = "<group>"; };
 		A07C327B2B822A68005563CD /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		A08644C32AEE7E190059A578 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A08644FC2AEE83390059A578 /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
@@ -155,7 +156,6 @@
 		A0896CE72B1CA16100A6AFC7 /* EmailSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSectionView.swift; sourceTree = "<group>"; };
 		A0896CEA2B1CEBC800A6AFC7 /* TabBarItemsPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemsPreferenceKey.swift; sourceTree = "<group>"; };
 		A0896CEC2B1D07DA00A6AFC7 /* SettingsLogOutBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLogOutBtn.swift; sourceTree = "<group>"; };
-		A0A2EF232B9B8BF500980053 /* Icon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icon.xcassets; sourceTree = "<group>"; };
 		A0AF140F2B4DD39600B2AA46 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		A0AF14112B4EFCE500B2AA46 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		A0C828BC2B0BE37600EA1A10 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -163,7 +163,6 @@
 		A0C828C02B0BF16A00EA1A10 /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
 		A0D63D992B94D01D000A2297 /* UpdateUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserInfo.swift; sourceTree = "<group>"; };
 		A0D63D9B2B94D6DE000A2297 /* UpdateUserSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserSectionView.swift; sourceTree = "<group>"; };
-		A0EAAAD32B7B806B009B422B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A0EAAAD72B7B8C9A009B422B /* DataBaseMananger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseMananger.swift; sourceTree = "<group>"; };
 		A0EAAAD92B7BC9C4009B422B /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		A0EAAADB2B7E41EF009B422B /* ChatForAdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatForAdminView.swift; sourceTree = "<group>"; };
@@ -273,8 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				A03922542AE56AF5009B1020 /* Assets.xcassets */,
-				A03922572AE56AF5009B1020 /* Preview Assets.xcassets */,
-				A0A2EF232B9B8BF500980053 /* Icon.xcassets */,
+				A064DF302B9C998D002AFBF3 /* Icon.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -356,11 +354,11 @@
 		A08645222AEFFFB00059A578 /* RegLogInServices */ = {
 			isa = PBXGroup;
 			children = (
+				A0194EA12B9E0EF6000FFC9A /* GoogleService-Info.plist */,
 				A051D48C2AF678E000C46391 /* Utilities.swift */,
 				A08644C32AEE7E190059A578 /* AuthService.swift */,
 				D173A9972B18D7DC000DBDCA /* GoogleSignInHelper.swift */,
 				A049FED82B386FC500558790 /* AppleSignInHepler.swift */,
-				A0EAAAD32B7B806B009B422B /* GoogleService-Info.plist */,
 			);
 			path = RegLogInServices;
 			sourceTree = "<group>";
@@ -560,10 +558,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A03922582AE56AF5009B1020 /* Preview Assets.xcassets in Resources */,
+				A0194EA22B9E0EF6000FFC9A /* GoogleService-Info.plist in Resources */,
 				A03922552AE56AF5009B1020 /* Assets.xcassets in Resources */,
-				A0A2EF242B9B8BF500980053 /* Icon.xcassets in Resources */,
-				A0EAAAD42B7B806B009B422B /* GoogleService-Info.plist in Resources */,
+				A064DF312B9C998D002AFBF3 /* Icon.xcassets in Resources */,
+				A064DF322B9C9A7B002AFBF3 /* Travel-Radar-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -774,10 +772,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "Travel Radar/Travel Radar.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Travel Radar/Preview Content\"";
 				DEVELOPMENT_TEAM = P2SR32GZP6;
 				ENABLE_PREVIEWS = YES;
@@ -788,8 +786,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Icon;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -808,10 +808,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "Travel Radar/Travel Radar.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Travel Radar/Preview Content\"";
 				DEVELOPMENT_TEAM = P2SR32GZP6;
 				ENABLE_PREVIEWS = YES;
@@ -822,8 +822,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Icon;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
