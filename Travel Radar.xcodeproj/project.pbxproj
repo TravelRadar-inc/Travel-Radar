@@ -84,6 +84,7 @@
 		A0C828C12B0BF16A00EA1A10 /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C828C02B0BF16A00EA1A10 /* CustomTabBarContainerView.swift */; };
 		A0D63D9A2B94D01D000A2297 /* UpdateUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D63D992B94D01D000A2297 /* UpdateUserInfo.swift */; };
 		A0D63D9C2B94D6DE000A2297 /* UpdateUserSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D63D9B2B94D6DE000A2297 /* UpdateUserSectionView.swift */; };
+		A0D79DCE2B9E25A400E37FC7 /* Preview Content.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D79DCD2B9E25A400E37FC7 /* Preview Content.xcassets */; };
 		A0EAAAD82B7B8C9A009B422B /* DataBaseMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAAAD72B7B8C9A009B422B /* DataBaseMananger.swift */; };
 		A0EAAADA2B7BC9C4009B422B /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAAAD92B7BC9C4009B422B /* CustomNavigationBar.swift */; };
 		A0EAAADC2B7E41EF009B422B /* ChatForAdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAAADB2B7E41EF009B422B /* ChatForAdminView.swift */; };
@@ -163,6 +164,7 @@
 		A0C828C02B0BF16A00EA1A10 /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
 		A0D63D992B94D01D000A2297 /* UpdateUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserInfo.swift; sourceTree = "<group>"; };
 		A0D63D9B2B94D6DE000A2297 /* UpdateUserSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserSectionView.swift; sourceTree = "<group>"; };
+		A0D79DCD2B9E25A400E37FC7 /* Preview Content.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Content.xcassets"; sourceTree = "<group>"; };
 		A0EAAAD72B7B8C9A009B422B /* DataBaseMananger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseMananger.swift; sourceTree = "<group>"; };
 		A0EAAAD92B7BC9C4009B422B /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		A0EAAADB2B7E41EF009B422B /* ChatForAdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatForAdminView.swift; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				A03922542AE56AF5009B1020 /* Assets.xcassets */,
+				A0D79DCD2B9E25A400E37FC7 /* Preview Content.xcassets */,
 				A064DF302B9C998D002AFBF3 /* Icon.xcassets */,
 			);
 			path = "Preview Content";
@@ -562,6 +565,7 @@
 				A03922552AE56AF5009B1020 /* Assets.xcassets in Resources */,
 				A064DF312B9C998D002AFBF3 /* Icon.xcassets in Resources */,
 				A064DF322B9C9A7B002AFBF3 /* Travel-Radar-Info.plist in Resources */,
+				A0D79DCE2B9E25A400E37FC7 /* Preview Content.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
