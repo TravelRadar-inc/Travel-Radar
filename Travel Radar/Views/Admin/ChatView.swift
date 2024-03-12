@@ -74,7 +74,6 @@ struct ChatView: View {
                         ForEach(viewModel.messages) { message in
                             MessageView(message: message)
                         }
-                        
                     }
                 }.onChange(of: viewModel.messages.count) { _ in
                     if let lastMessage = viewModel.messages.last {
@@ -82,9 +81,12 @@ struct ChatView: View {
                     }
                 }
             }
+            
             HStack{
-                TextField("    Message", text: $text, axis: .vertical)
-                    .padding(.leading)
+                TextField("Message", text: $text, axis: .vertical)
+                    .multilineTextAlignment(.leading)
+                    .padding(.leading,10)
+                Spacer()
                 Button{
                     Task{
                         do{
@@ -109,6 +111,7 @@ struct ChatView: View {
         } .onAppear{
             viewModel.loadMessages(chatId: chatId)
         }
+        
     }
 }
 
