@@ -5,11 +5,13 @@ struct AuthDataResultModel{
     let name: String?
     let email: String?
     let photoURL: String?
+    let isAnonymous: Bool
     init(user:User){
         self.uid = user.uid
         self.email = user.email
         self.name = user.displayName
         self.photoURL = user.photoURL?.absoluteString
+        self.isAnonymous = user.isAnonymous
     }
 }
 
@@ -72,6 +74,11 @@ class AuthService{
     func signInWithApple(tokens : SignInWithAppleResult) async throws -> AuthDataResultModel{
         let credential = OAuthProvider.credential(withProviderID: AuthProviderOption.apple.rawValue, idToken: tokens.token, rawNonce: tokens.nonce)
         return try await signIn(credential: credential)
+    }
+    
+    func signInAnonymous() async throws -> AuthDataResultModel{
+        let authDataResult = try await Auth.auth().signInAnonymously()
+        return AuthDataResultModel(user: authDataResult.user)
     }
     
     func getProviders() throws -> [AuthProviderOption]{

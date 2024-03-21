@@ -2,6 +2,13 @@ import Foundation
 
 class SettingsViewModel: ObservableObject{
     @Published var authProviders: [AuthProviderOption] = []
+    
+    @Published var authUser: AuthDataResultModel? = nil
+    
+    func loadUser() {
+        self.authUser = try? AuthService.shared.getAuthUser()
+    }
+    
     func loadAuthProviders(){
         if let providers = try? AuthService.shared.getProviders(){
             authProviders = providers

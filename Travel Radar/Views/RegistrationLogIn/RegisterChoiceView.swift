@@ -15,11 +15,11 @@ struct RegisterChoiceView: View {
     var body: some View {
         ZStack{
             VStack{
-                TextRedisterView(text: "Хотите легко путешествовать?")
+                TextRegisterView(text: "Хотите легко путешествовать?")
                     .padding(.top,10)
-                TextRedisterView(text: "Присоединяйтесь к нам")
+                TextRegisterView(text: "Присоединяйтесь к нам")
                     .padding(.bottom, 300)
-                Spacer()
+                
                 TextFieldMain(World: $viewModel.email, placeholder: "Введите Email")
                 PasswordFieldView(World: $viewModel.password, placeholder: "Введите пароль")
                 PasswordFieldView(World: $confirmPassword, placeholder: "Повторите пароль")
@@ -42,7 +42,7 @@ struct RegisterChoiceView: View {
                     ButtonEnter(text:"Зарегестрироваться", color: Color(.white))
                         .padding(.bottom,20)
                 })
-                Spacer()
+                
                 Button(action: {
                     isShowingMainLogInView.toggle()
                 }, label: {

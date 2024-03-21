@@ -22,6 +22,9 @@ final class AuthenticationViewModel: ObservableObject{
         let authDataResult = try await AuthService.shared.signInWithApple(tokens: tokens)
         try await UserMananger.shared.creatNewUser(auth: authDataResult)
     }
+    func signInAnonymous() async throws{
+        try await AuthService.shared.signInAnonymous()
+    }
 }
 
 struct MainLogInView: View {
@@ -74,6 +77,29 @@ struct MainLogInView: View {
                         isShowingRegisterChoiceView.toggle()
                     }, label: {
                         SignUpWithEmainBtn(text:"Регистрация с почтой", imageName: "envelope.fill")
+                        
+                    })
+                    Button(action: {
+                        Task{
+                            do{
+                                try await viewModel.signInAnonymous()
+                                isShowMapView.toggle()
+                            }
+                            catch{
+                                alertMessage = "Ошибка регистрации \(error.localizedDescription)"
+                                self.isShowAlert.toggle()
+                            }
+                        }
+                    }, label: {
+                        Text("Войти анонимно")
+                            .padding()
+                            .frame(width: 320,height: 55)
+                            .background(.orange)
+                            .cornerRadius(10)
+                            .padding(.horizontal,5)
+                            .cornerRadius(10)
+                            .font(.system(size: 20))
+                            .foregroundColor(.white)
                         
                     })
                     Button(action: {

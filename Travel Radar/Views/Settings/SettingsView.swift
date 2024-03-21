@@ -19,13 +19,11 @@ struct SettingsView: View {
                 if viewModel.authProviders.contains(.email){
                     EmailSection(isShowAlert: $isShowAlert, alertMessage: $alertMessage)
                 }
-                //UpdateUserSectionView()
                 if let user = Auth.auth().currentUser{
-                    if user.uid != "M0utShwhVqgrtBI2TI2yKo0eNfR2" && user.uid != "YOSCUB796wfe6xWk8zpoxNluKH62"{
+                    if user.uid != "M0utShwhVqgrtBI2TI2yKo0eNfR2" && user.uid != "YOSCUB796wfe6xWk8zpoxNluKH62" {
                         TechnicalSupportView()
-                    }else{}
+                    }
                 }
-                
                 LogOut(isShowContentView: $isShowContentView, isShowAlert: $isShowAlert, alertMessage: $alertMessage)
                 DeleteAccount(isShowContentView: $isShowContentView, isShowAlert: $isShowAlert, alertMessage: $alertMessage)
             }

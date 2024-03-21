@@ -1,8 +1,17 @@
 
 import Foundation
 import SwiftUI
+final class LogOutViewModel: ObservableObject{
+    @Published var authUser: AuthDataResultModel? = nil
+    
+    func loadUser() {
+        self.authUser = try? AuthService.shared.getAuthUser()
+    }
+}
+
 struct LogOut: View {
     @StateObject private var viewModel = SettingsViewModel()
+    @StateObject private var viewModel2 = LogOutViewModel()
     @Binding var isShowContentView: Bool
     @Binding var isShowAlert:Bool
     @Binding var alertMessage:String
@@ -21,5 +30,6 @@ struct LogOut: View {
         }, label: {
             Text("Выйти из аккаунта")
         })
+        
     }
 }
