@@ -50,4 +50,13 @@ class DataBaseMananger{
         try await Firestore.firestore().collection("chats").document(chatId).delete()
     }
     
+    func checkForMessages(chatId: String) async  -> Bool{
+        do{
+            let snapshot = try await chatRef.document(chatId).collection("messages").getDocuments()
+            return !snapshot.isEmpty
+        }catch{
+            return false
+        }
+    }
+    
 }

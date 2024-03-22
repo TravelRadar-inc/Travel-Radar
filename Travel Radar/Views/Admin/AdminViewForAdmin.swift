@@ -9,22 +9,18 @@ final class AdminViewForAdminViewModel: ObservableObject{
     @Published var userInfos = [String: DBUser]() // chatId: DBUser
     @Published var user = DBUser(userId: "1", email: "1", photoURL: "1", name: "1", dateCreated: Date())
     @Published var message = Message(userUid: "1", text: "1", photoURL: "1", createdAt: Date())
-//    init(){
-//        Task{ [weak self] in
-//            do{
-//                let chats = try await DataBaseMananger.shared.fetchChats()
-//                self?.chats = chats
-//                print(chats.count)
-//            }catch{
-//                print("error")
-//            }
-//        }
-//    }
+
     func loadChats(){
         Task{
             do{
                 let chats = try await DataBaseMananger.shared.fetchChats()
                 self.chats = chats
+                for i in stride(from: chats.count - 1, through: 0, by: -1){
+                    let check = try await DataBaseMananger.shared.checkForMessages(chatId: chats[i].id)
+                    if !check{
+                        self.chats.remove(at: i)
+                    }
+                }
                 //print(chats.count)
                 self.unwrappening()
             }catch{
