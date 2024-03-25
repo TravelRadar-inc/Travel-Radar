@@ -1,6 +1,6 @@
 import SwiftUI
 import Foundation
-
+import Firebase
 struct DeleteAccount: View {
     @StateObject private var viewModel = SettingsViewModel()
     @Binding var isShowContentView: Bool
@@ -10,6 +10,9 @@ struct DeleteAccount: View {
         Button(role: .destructive, action: {
             Task{
                 do{
+                    if let user = Auth.auth().currentUser{
+                        try await viewModel.deletChat(chatId: user.uid)
+                    }
                     try await viewModel.deleteAccount()
                     isShowContentView.toggle()
                 }

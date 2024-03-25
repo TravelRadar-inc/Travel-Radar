@@ -84,6 +84,9 @@ struct AdminViewForAdmin: View {
                 }
             }
         }
+        .safeAreaInset(edge: .bottom){
+
+        }
     }
 }
 #Preview {

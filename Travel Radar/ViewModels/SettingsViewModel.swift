@@ -34,4 +34,8 @@ class SettingsViewModel: ObservableObject{
     func deleteAccount() async throws{
         try await AuthService.shared.delete()
     }
+    
+    func deletChat(chatId:String) async throws{
+        try await DataBaseMananger.shared.deleteChat(chatId: chatId)
+    }
 }
