@@ -24,6 +24,7 @@ struct CountryScreenView: View {
                         .background(Color("transperentWhite"))
                         .font(.largeTitle)
                         .cornerRadius(16)
+                        .foregroundColor(.black)
                 }
                 
                 TabView {

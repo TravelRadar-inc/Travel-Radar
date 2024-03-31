@@ -7,23 +7,33 @@ struct CountryInfoBtn: View {
     
     var body: some View {
         VStack{
-            HStack{
-                Button(textOfButton) {
+
+                /*Button(textOfButton) {
                     withAnimation {
                         isShowedSomething.toggle()
                     }
                 }
                 .foregroundColor(.black)
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                
-                Spacer()
-            }
-
+                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)*/
+            
+            Button(action: {
+                withAnimation {
+                    isShowedSomething.toggle()
+                }
+            }, label: {
+                Text(textOfButton)
+                    .frame(maxWidth: .infinity)
+                    .foregroundColor(.black)
+                    .padding(.horizontal, 20)
+                    .font(.title)
+            })
+            
             if isShowedSomething {
                 HStack{
                     Text(textOfElement)
                             .font(.title2)
                             .padding(.top, 10)
+                            .foregroundColor(.black)
                     
                     Spacer()
                 }
