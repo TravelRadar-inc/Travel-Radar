@@ -77,16 +77,19 @@ struct AdminViewForAdmin: View {
                         if let message = viewModel.lastMessages[viewModel.chats[index].id], let user = viewModel.userInfos[viewModel.chats[index].id]{
                             ChatForAdminView(message: message, user: user)
                         }
-                        //test()
+                        
+                    }
+                    
+                    ForEach(0..<7){_ in 
+                        Placeholder()
                     }
                 } .onAppear{
                     viewModel.loadChats()
                 }
             }
         }
-        .safeAreaInset(edge: .bottom){
+        
 
-        }
     }
 }
 #Preview {

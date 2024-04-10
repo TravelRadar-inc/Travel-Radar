@@ -19,7 +19,7 @@ struct CountriesListView: View {
         //.navigationTitle("Список стран")
         .listStyle(.grouped)
         .safeAreaInset(edge: .bottom){
-//            Color(.green)
+
 //                .frame(height: 50)
         }
     }

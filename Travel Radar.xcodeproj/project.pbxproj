@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A009C6922BC5D9B5007D8CA9 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009C6912BC5D9B5007D8CA9 /* Placeholder.swift */; };
 		A00B32272AFABCD200F4F605 /* CountriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B32262AFABCD200F4F605 /* CountriesListView.swift */; };
 		A0194EA22B9E0EF6000FFC9A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0194EA12B9E0EF6000FFC9A /* GoogleService-Info.plist */; };
 		A03922512AE56AF4009B1020 /* Travel_RadarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922502AE56AF4009B1020 /* Travel_RadarApp.swift */; };
@@ -34,7 +35,6 @@
 		A049FEF42B46D09500558790 /* TechnicalSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049FEF32B46D09500558790 /* TechnicalSupportView.swift */; };
 		A051D48D2AF678E000C46391 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A051D48C2AF678E000C46391 /* Utilities.swift */; };
 		A064DF322B9C9A7B002AFBF3 /* Travel-Radar-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A051D4862AF65A9B00C46391 /* Travel-Radar-Info.plist */; };
-		A07C327C2B822A68005563CD /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07C327B2B822A68005563CD /* test.swift */; };
 		A08644C42AEE7E190059A578 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08644C32AEE7E190059A578 /* AuthService.swift */; };
 		A08644FD2AEE83390059A578 /* MainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08644FC2AEE83390059A578 /* MainAppView.swift */; };
 		A08644FF2AEE874A0059A578 /* SecureFieldMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08644FE2AEE874A0059A578 /* SecureFieldMainView.swift */; };
@@ -114,6 +114,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A009C6912BC5D9B5007D8CA9 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 		A00B32262AFABCD200F4F605 /* CountriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListView.swift; sourceTree = "<group>"; };
 		A0194EA12B9E0EF6000FFC9A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A039224D2AE56AF4009B1020 /* Travel Radar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travel Radar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,7 +144,6 @@
 		A049FEF32B46D09500558790 /* TechnicalSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalSupportView.swift; sourceTree = "<group>"; };
 		A051D4862AF65A9B00C46391 /* Travel-Radar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Travel-Radar-Info.plist"; sourceTree = SOURCE_ROOT; };
 		A051D48C2AF678E000C46391 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		A07C327B2B822A68005563CD /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		A08644C32AEE7E190059A578 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A08644FC2AEE83390059A578 /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
 		A08644FE2AEE874A0059A578 /* SecureFieldMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureFieldMainView.swift; sourceTree = "<group>"; };
@@ -305,9 +305,9 @@
 			children = (
 				A049FEED2B46B8CA00558790 /* AdminViewForAdmin.swift */,
 				A049FEF12B46BE0D00558790 /* MainAdminViewForAdmin.swift */,
-				A07C327B2B822A68005563CD /* test.swift */,
 				A0EAAADB2B7E41EF009B422B /* ChatForAdminView.swift */,
 				A0AF140F2B4DD39600B2AA46 /* MessageView.swift */,
+				A009C6912BC5D9B5007D8CA9 /* Placeholder.swift */,
 				A0AF14112B4EFCE500B2AA46 /* ChatModel.swift */,
 				A0EAAAD72B7B8C9A009B422B /* DataBaseMananger.swift */,
 				A049FEEF2B46BCE700558790 /* ChatView.swift */,
@@ -578,7 +578,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0896CEB2B1CEBC800A6AFC7 /* TabBarItemsPreferenceKey.swift in Sources */,
-				A07C327C2B822A68005563CD /* test.swift in Sources */,
 				A049FEE02B3ACEF300558790 /* SignUpWithEmailBtn.swift in Sources */,
 				A0AF14122B4EFCE500B2AA46 /* ChatModel.swift in Sources */,
 				D173A98D2B188B4F000DBDCA /* IrelandMainView.swift in Sources */,
@@ -619,6 +618,7 @@
 				A0D63D9A2B94D01D000A2297 /* UpdateUserInfo.swift in Sources */,
 				D1DE48CA2B0412C500F5C50F /* GermanyMainView.swift in Sources */,
 				A08644FF2AEE874A0059A578 /* SecureFieldMainView.swift in Sources */,
+				A009C6922BC5D9B5007D8CA9 /* Placeholder.swift in Sources */,
 				A08645152AEEA36A0059A578 /* CountryBtn.swift in Sources */,
 				A049FED92B386FC500558790 /* AppleSignInHepler.swift in Sources */,
 				D18EF6242B04FA0300E6C4AF /* Alert.swift in Sources */,
@@ -780,7 +780,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "Travel Radar/Travel Radar.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Travel Radar/Preview Content\"";
 				DEVELOPMENT_TEAM = P2SR32GZP6;
 				ENABLE_PREVIEWS = YES;
@@ -799,7 +799,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.appstudio.travelradar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -816,7 +816,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "Travel Radar/Travel Radar.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Travel Radar/Preview Content\"";
 				DEVELOPMENT_TEAM = P2SR32GZP6;
 				ENABLE_PREVIEWS = YES;
@@ -835,7 +835,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.appstudio.travelradar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

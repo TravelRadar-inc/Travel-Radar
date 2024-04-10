@@ -18,7 +18,7 @@ struct RegisterChoiceView: View {
                 TextRegisterView(text: "Хотите легко путешествовать?")
                     .padding(.top,10)
                 TextRegisterView(text: "Присоединяйтесь к нам")
-                    .padding(.bottom, 300)
+                    .padding(.bottom, 430)
                 
                 TextFieldMain(World: $viewModel.email, placeholder: "Введите Email")
                 PasswordFieldView(World: $viewModel.password, placeholder: "Введите пароль")
@@ -40,7 +40,7 @@ struct RegisterChoiceView: View {
                     }
                 }, label: {
                     ButtonEnter(text:"Зарегестрироваться", color: Color(.white))
-                        .padding(.bottom,20)
+                        
                 })
                 
                 Button(action: {

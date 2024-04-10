@@ -17,34 +17,12 @@ final class ChatViewModel: ObservableObject{
         try await ChatModel(id: chatId).sendMessageToDatabase(message: message)
     }
     
-//    init() {
-//        Task { [weak self] in
-//            do {
-//                let authUser = try AuthService.shared.getAuthUser()
-//                let messages = try await ChatModel(id: authUser.uid).fetchMessages()
-//                self?.messages = messages
-//            } catch {
-//                print(error)
-//            }
-//        }
-////        subscribeToMessagePublisher()
-//    }
+
     
     func refresh() {
         self.messages = messages
     }
-    
-//    private func subscribeToMessagePublisher(){
-//        let authUser = try? AuthService.shared.getAuthUser()
-//        ChatModel(id: authUser?.uid ?? "").messagesPublisher.receive(on: DispatchQueue.main)
-//            .sink { completion in
-//                print(completion)
-//            } receiveValue: { [weak self] messages in
-//                self?.messages = messages
-//            }
-//            .store(in: &subscribers)
-//
-//    }
+
     func loadMessages(chatId: String){
         Task{ [weak self] in
             do{

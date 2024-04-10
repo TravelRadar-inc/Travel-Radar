@@ -8,6 +8,7 @@ struct ChatForAdminView: View {
     var body: some View {
         Button(action: {
             isShowChatView.toggle()
+            print("hello")
         }, label: {
             HStack(alignment: .top, spacing: 15) {
                 if let photoURL = user.fetchPhotoURL(){
