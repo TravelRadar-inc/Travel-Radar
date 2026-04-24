@@ -2,6 +2,9 @@
 
 > An iOS application that helps **Russian travelers** quickly find entry requirements, visa information, and travel tips for different countries.
 
+> [!NOTE]
+> **This app is not currently available on the App Store. Development is on hold.**
+
 ---
 
 ## Features
