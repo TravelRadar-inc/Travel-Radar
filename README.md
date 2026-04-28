@@ -109,7 +109,7 @@ python scripts/parsing_manager.py
 ## Authors
 
 - **Mikhail** ([@PIFFORS](https://github.com/PIFFORS))
-- **Artyom** ([@leginar7](https://github.com/leginar7))
+- **Artemiy** ([@leginar7](https://github.com/leginar7))
 
 ---
 
